@@ -18218,7 +18218,7 @@ function () {
     window.RunGame = function () {
         game.state = Network.STATE.LOGIN, Tools.startupMsg(), Tools.loadSettings(), Tools.detectCapabilities(), Tools.setupDebug(), Graphics.setup(), Tools.initBuckets(), Particles.setup(), UI.setup(), Input.setup(), Games.setup(), Sound.setup();
         var Gt = new PIXI.ticker.Ticker;
-        Gt.add(Bt), Gt.start(), setInterval(Xt, 500)
+        Gt.add(Bt), Gt.start(), setInterval(Xt, 500), Graphics.ticker = Gt
     }
 }();
 class Vector {
@@ -19520,7 +19520,7 @@ function loadGameCode() {
                 var vn = new Vector(bn.posX, bn.posY);
                 Particles.spiritShockwave(vn), Sound.effectRepel(vn)
             }, Network.getScores = function () {
-                console.log("getting scores"), game.state == Network.STATE.PLAYING && cn({
+                game.state == Network.STATE.PLAYING && cn({
                     c: gn.SCOREDETAILED
                 })
             }, Network.resizeHorizon = function () {
@@ -23657,7 +23657,7 @@ function (Bt, Xt) {
         }
     }
 });
-var nonprintRegex = /[﷽\0-\x1F\x7F-\x9F\xAD\u0378\u0379\u037F-\u0383\u038B\u038D\u03A2\u0528-\u0530\u0557\u0558\u0560\u0588\u058B-\u058E\u0590\u05C8-\u05CF\u05EB-\u05EF\u05F5-\u0605\u061C\u061D\u06DD\u070E\u070F\u074B\u074C\u07B2-\u07BF\u07FB-\u07FF\u082E\u082F\u083F\u085C\u085D\u085F-\u089F\u08A1\u08AD-\u08E3\u08FF\u0978\u0980\u0984\u098D\u098E\u0991\u0992\u09A9\u09B1\u09B3-\u09B5\u09BA\u09BB\u09C5\u09C6\u09C9\u09CA\u09CF-\u09D6\u09D8-\u09DB\u09DE\u09E4\u09E5\u09FC-\u0A00\u0A04\u0A0B-\u0A0E\u0A11\u0A12\u0A29\u0A31\u0A34\u0A37\u0A3A\u0A3B\u0A3D\u0A43-\u0A46\u0A49\u0A4A\u0A4E-\u0A50\u0A52-\u0A58\u0A5D\u0A5F-\u0A65\u0A76-\u0A80\u0A84\u0A8E\u0A92\u0AA9\u0AB1\u0AB4\u0ABA\u0ABB\u0AC6\u0ACA\u0ACE\u0ACF\u0AD1-\u0ADF\u0AE4\u0AE5\u0AF2-\u0B00\u0B04\u0B0D\u0B0E\u0B11\u0B12\u0B29\u0B31\u0B34\u0B3A\u0B3B\u0B45\u0B46\u0B49\u0B4A\u0B4E-\u0B55\u0B58-\u0B5B\u0B5E\u0B64\u0B65\u0B78-\u0B81\u0B84\u0B8B-\u0B8D\u0B91\u0B96-\u0B98\u0B9B\u0B9D\u0BA0-\u0BA2\u0BA5-\u0BA7\u0BAB-\u0BAD\u0BBA-\u0BBD\u0BC3-\u0BC5\u0BC9\u0BCE\u0BCF\u0BD1-\u0BD6\u0BD8-\u0BE5\u0BFB-\u0C00\u0C04\u0C0D\u0C11\u0C29\u0C34\u0C3A-\u0C3C\u0C45\u0C49\u0C4E-\u0C54\u0C57\u0C5A-\u0C5F\u0C64\u0C65\u0C70-\u0C77\u0C80\u0C81\u0C84\u0C8D\u0C91\u0CA9\u0CB4\u0CBA\u0CBB\u0CC5\u0CC9\u0CCE-\u0CD4\u0CD7-\u0CDD\u0CDF\u0CE4\u0CE5\u0CF0\u0CF3-\u0D01\u0D04\u0D0D\u0D11\u0D3B\u0D3C\u0D45\u0D49\u0D4F-\u0D56\u0D58-\u0D5F\u0D64\u0D65\u0D76-\u0D78\u0D80\u0D81\u0D84\u0D97-\u0D99\u0DB2\u0DBC\u0DBE\u0DBF\u0DC7-\u0DC9\u0DCB-\u0DCE\u0DD5\u0DD7\u0DE0-\u0DF1\u0DF5-\u0E00\u0E3B-\u0E3E\u0E5C-\u0E80\u0E83\u0E85\u0E86\u0E89\u0E8B\u0E8C\u0E8E-\u0E93\u0E98\u0EA0\u0EA4\u0EA6\u0EA8\u0EA9\u0EAC\u0EBA\u0EBE\u0EBF\u0EC5\u0EC7\u0ECE\u0ECF\u0EDA\u0EDB\u0EE0-\u0EFF\u0F48\u0F6D-\u0F70\u0F98\u0FBD\u0FCD\u0FDB-\u0FFF\u10C6\u10C8-\u10CC\u10CE\u10CF\u1249\u124E\u124F\u1257\u1259\u125E\u125F\u1289\u128E\u128F\u12B1\u12B6\u12B7\u12BF\u12C1\u12C6\u12C7\u12D7\u1311\u1316\u1317\u135B\u135C\u137D-\u137F\u139A-\u139F\u13F5-\u13FF\u169D-\u169F\u16F1-\u16FF\u170D\u1715-\u171F\u1737-\u173F\u1754-\u175F\u176D\u1771\u1774-\u177F\u17DE\u17DF\u17EA-\u17EF\u17FA-\u17FF\u180F\u181A-\u181F\u1878-\u187F\u18AB-\u18AF\u18F6-\u18FF\u191D-\u191F\u192C-\u192F\u193C-\u193F\u1941-\u1943\u196E\u196F\u1975-\u197F\u19AC-\u19AF\u19CA-\u19CF\u19DB-\u19DD\u1A1C\u1A1D\u1A5F\u1A7D\u1A7E\u1A8A-\u1A8F\u1A9A-\u1A9F\u1AAE-\u1AFF\u1B4C-\u1B4F\u1B7D-\u1B7F\u1BF4-\u1BFB\u1C38-\u1C3A\u1C4A-\u1C4C\u1C80-\u1CBF\u1CC8-\u1CCF\u1CF7-\u1CFF\u1DE7-\u1DFB\u1F16\u1F17\u1F1E\u1F1F\u1F46\u1F47\u1F4E\u1F4F\u1F58\u1F5A\u1F5C\u1F5E\u1F7E\u1F7F\u1FB5\u1FC5\u1FD4\u1FD5\u1FDC\u1FF0\u1FF1\u1FF5\u1FFF\u200B-\u200F\u202A-\u202E\u2060-\u206F\u2072\u2073\u208F\u209D-\u209F\u20BB-\u20CF\u20F1-\u20FF\u218A-\u218F\u23F4-\u23FF\u2427-\u243F\u244B-\u245F\u2700\u2B4D-\u2B4F\u2B5A-\u2BFF\u2C2F\u2C5F\u2CF4-\u2CF8\u2D26\u2D28-\u2D2C\u2D2E\u2D2F\u2D68-\u2D6E\u2D71-\u2D7E\u2D97-\u2D9F\u2DA7\u2DAF\u2DB7\u2DBF\u2DC7\u2DCF\u2DD7\u2DDF\u2E3C-\u2E7F\u2E9A\u2EF4-\u2EFF\u2FD6-\u2FEF\u2FFC-\u2FFF\u3040\u3097\u3098\u3100-\u3104\u312E-\u3130\u318F\u31BB-\u31BF\u31E4-\u31EF\u321F\u32FF\u4DB6-\u4DBF\u9FCD-\u9FFF\uA48D-\uA48F\uA4C7-\uA4CF\uA62C-\uA63F\uA698-\uA69E\uA6F8-\uA6FF\uA78F\uA794-\uA79F\uA7AB-\uA7F7\uA82C-\uA82F\uA83A-\uA83F\uA878-\uA87F\uA8C5-\uA8CD\uA8DA-\uA8DF\uA8FC-\uA8FF\uA954-\uA95E\uA97D-\uA97F\uA9CE\uA9DA-\uA9DD\uA9E0-\uA9FF\uAA37-\uAA3F\uAA4E\uAA4F\uAA5A\uAA5B\uAA7C-\uAA7F\uAAC3-\uAADA\uAAF7-\uAB00\uAB07\uAB08\uAB0F\uAB10\uAB17-\uAB1F\uAB27\uAB2F-\uABBF\uABEE\uABEF\uABFA-\uABFF\uD7A4-\uD7AF\uD7C7-\uD7CA\uFA6E\uFA6F\uFADA-\uFAFF\uFB07-\uFB12\uFB18-\uFB1C\uFB37\uFB3D\uFB3F\uFB42\uFB45\uFBC2-\uFBD2\uFD40-\uFD4F\uFD90\uFD91\uFDC8-\uFDEF\uFDFE\uFDFF\uFE1A-\uFE1F\uFE27-\uFE2F\uFE53\uFE67\uFE6C-\uFE6F\uFE75\uFEFD-\uFF00\uFFBF-\uFFC1\uFFC8\uFFC9\uFFD0\uFFD1\uFFD8\uFFD9\uFFDD-\uFFDF\uFFE7\uFFEF-\uFFFB\uFFFE\uFFFF]/g;
+var nonprintRegex = /[﷽\u0400-\u04FF\0-\x1F\x7F-\x9F\xAD\u0378\u0379\u037F-\u0383\u038B\u038D\u03A2\u0528-\u0530\u0557\u0558\u0560\u0588\u058B-\u058E\u0590\u05C8-\u05CF\u05EB-\u05EF\u05F5-\u0605\u061C\u061D\u06DD\u070E\u070F\u074B\u074C\u07B2-\u07BF\u07FB-\u07FF\u082E\u082F\u083F\u085C\u085D\u085F-\u089F\u08A1\u08AD-\u08E3\u08FF\u0978\u0980\u0984\u098D\u098E\u0991\u0992\u09A9\u09B1\u09B3-\u09B5\u09BA\u09BB\u09C5\u09C6\u09C9\u09CA\u09CF-\u09D6\u09D8-\u09DB\u09DE\u09E4\u09E5\u09FC-\u0A00\u0A04\u0A0B-\u0A0E\u0A11\u0A12\u0A29\u0A31\u0A34\u0A37\u0A3A\u0A3B\u0A3D\u0A43-\u0A46\u0A49\u0A4A\u0A4E-\u0A50\u0A52-\u0A58\u0A5D\u0A5F-\u0A65\u0A76-\u0A80\u0A84\u0A8E\u0A92\u0AA9\u0AB1\u0AB4\u0ABA\u0ABB\u0AC6\u0ACA\u0ACE\u0ACF\u0AD1-\u0ADF\u0AE4\u0AE5\u0AF2-\u0B00\u0B04\u0B0D\u0B0E\u0B11\u0B12\u0B29\u0B31\u0B34\u0B3A\u0B3B\u0B45\u0B46\u0B49\u0B4A\u0B4E-\u0B55\u0B58-\u0B5B\u0B5E\u0B64\u0B65\u0B78-\u0B81\u0B84\u0B8B-\u0B8D\u0B91\u0B96-\u0B98\u0B9B\u0B9D\u0BA0-\u0BA2\u0BA5-\u0BA7\u0BAB-\u0BAD\u0BBA-\u0BBD\u0BC3-\u0BC5\u0BC9\u0BCE\u0BCF\u0BD1-\u0BD6\u0BD8-\u0BE5\u0BFB-\u0C00\u0C04\u0C0D\u0C11\u0C29\u0C34\u0C3A-\u0C3C\u0C45\u0C49\u0C4E-\u0C54\u0C57\u0C5A-\u0C5F\u0C64\u0C65\u0C70-\u0C77\u0C80\u0C81\u0C84\u0C8D\u0C91\u0CA9\u0CB4\u0CBA\u0CBB\u0CC5\u0CC9\u0CCE-\u0CD4\u0CD7-\u0CDD\u0CDF\u0CE4\u0CE5\u0CF0\u0CF3-\u0D01\u0D04\u0D0D\u0D11\u0D3B\u0D3C\u0D45\u0D49\u0D4F-\u0D56\u0D58-\u0D5F\u0D64\u0D65\u0D76-\u0D78\u0D80\u0D81\u0D84\u0D97-\u0D99\u0DB2\u0DBC\u0DBE\u0DBF\u0DC7-\u0DC9\u0DCB-\u0DCE\u0DD5\u0DD7\u0DE0-\u0DF1\u0DF5-\u0E00\u0E3B-\u0E3E\u0E5C-\u0E80\u0E83\u0E85\u0E86\u0E89\u0E8B\u0E8C\u0E8E-\u0E93\u0E98\u0EA0\u0EA4\u0EA6\u0EA8\u0EA9\u0EAC\u0EBA\u0EBE\u0EBF\u0EC5\u0EC7\u0ECE\u0ECF\u0EDA\u0EDB\u0EE0-\u0EFF\u0F48\u0F6D-\u0F70\u0F98\u0FBD\u0FCD\u0FDB-\u0FFF\u10C6\u10C8-\u10CC\u10CE\u10CF\u1249\u124E\u124F\u1257\u1259\u125E\u125F\u1289\u128E\u128F\u12B1\u12B6\u12B7\u12BF\u12C1\u12C6\u12C7\u12D7\u1311\u1316\u1317\u135B\u135C\u137D-\u137F\u139A-\u139F\u13F5-\u13FF\u169D-\u169F\u16F1-\u16FF\u170D\u1715-\u171F\u1737-\u173F\u1754-\u175F\u176D\u1771\u1774-\u177F\u17DE\u17DF\u17EA-\u17EF\u17FA-\u17FF\u180F\u181A-\u181F\u1878-\u187F\u18AB-\u18AF\u18F6-\u18FF\u191D-\u191F\u192C-\u192F\u193C-\u193F\u1941-\u1943\u196E\u196F\u1975-\u197F\u19AC-\u19AF\u19CA-\u19CF\u19DB-\u19DD\u1A1C\u1A1D\u1A5F\u1A7D\u1A7E\u1A8A-\u1A8F\u1A9A-\u1A9F\u1AAE-\u1AFF\u1B4C-\u1B4F\u1B7D-\u1B7F\u1BF4-\u1BFB\u1C38-\u1C3A\u1C4A-\u1C4C\u1C80-\u1CBF\u1CC8-\u1CCF\u1CF7-\u1CFF\u1DE7-\u1DFB\u1F16\u1F17\u1F1E\u1F1F\u1F46\u1F47\u1F4E\u1F4F\u1F58\u1F5A\u1F5C\u1F5E\u1F7E\u1F7F\u1FB5\u1FC5\u1FD4\u1FD5\u1FDC\u1FF0\u1FF1\u1FF5\u1FFF\u200B-\u200F\u202A-\u202E\u2060-\u206F\u2072\u2073\u208F\u209D-\u209F\u20BB-\u20CF\u20F1-\u20FF\u218A-\u218F\u23F4-\u23FF\u2427-\u243F\u244B-\u245F\u2700\u2B4D-\u2B4F\u2B5A-\u2BFF\u2C2F\u2C5F\u2CF4-\u2CF8\u2D26\u2D28-\u2D2C\u2D2E\u2D2F\u2D68-\u2D6E\u2D71-\u2D7E\u2D97-\u2D9F\u2DA7\u2DAF\u2DB7\u2DBF\u2DC7\u2DCF\u2DD7\u2DDF\u2E3C-\u2E7F\u2E9A\u2EF4-\u2EFF\u2FD6-\u2FEF\u2FFC-\u2FFF\u3040\u3097\u3098\u3100-\u3104\u312E-\u3130\u318F\u31BB-\u31BF\u31E4-\u31EF\u321F\u32FF\u4DB6-\u4DBF\u9FCD-\u9FFF\uA48D-\uA48F\uA4C7-\uA4CF\uA62C-\uA63F\uA698-\uA69E\uA6F8-\uA6FF\uA78F\uA794-\uA79F\uA7AB-\uA7F7\uA82C-\uA82F\uA83A-\uA83F\uA878-\uA87F\uA8C5-\uA8CD\uA8DA-\uA8DF\uA8FC-\uA8FF\uA954-\uA95E\uA97D-\uA97F\uA9CE\uA9DA-\uA9DD\uA9E0-\uA9FF\uAA37-\uAA3F\uAA4E\uAA4F\uAA5A\uAA5B\uAA7C-\uAA7F\uAAC3-\uAADA\uAAF7-\uAB00\uAB07\uAB08\uAB0F\uAB10\uAB17-\uAB1F\uAB27\uAB2F-\uABBF\uABEE\uABEF\uABFA-\uABFF\uD7A4-\uD7AF\uD7C7-\uD7CA\uFA6E\uFA6F\uFADA-\uFAFF\uFB07-\uFB12\uFB18-\uFB1C\uFB37\uFB3D\uFB3F\uFB42\uFB45\uFBC2-\uFBD2\uFD40-\uFD4F\uFD90\uFD91\uFDC8-\uFDEF\uFDFE\uFDFF\uFE1A-\uFE1F\uFE27-\uFE2F\uFE53\uFE67\uFE6C-\uFE6F\uFE75\uFEFD-\uFF00\uFFBF-\uFFC1\uFFC8\uFFC9\uFFD0\uFFD1\uFFD8\uFFD9\uFFDD-\uFFDF\uFFE7\uFFEF-\uFFFB\uFFFE\uFFFF]/g;
 
 function ReplaceWhitespaceNames() {
     forEachPlayer(function (Bt) {
@@ -23793,7 +23793,7 @@ window.Base64 = {
         for (var Xt = "", Gt = 0, Yt = 0, Wt = 0; Gt < Bt.length;) Yt = Bt.charCodeAt(Gt), 128 > Yt ? (Xt += String.fromCharCode(Yt), Gt++) : 191 < Yt && 224 > Yt ? (Wt = Bt.charCodeAt(Gt + 1), Xt += String.fromCharCode((31 & Yt) << 6 | 63 & Wt), Gt += 2) : (Wt = Bt.charCodeAt(Gt + 1), c3 = Bt.charCodeAt(Gt + 2), Xt += String.fromCharCode((15 & Yt) << 12 | (63 & Wt) << 6 | 63 & c3), Gt += 3);
         return Xt
     }
-}, window.SWAM_version = "2.4052304", SWAM.version = window.SWAM_version, SWAM.debug = !1;
+}, window.SWAM_version = "2.4061501", SWAM.version = window.SWAM_version, SWAM.debug = !1;
 
 function SWAM() {
     function getDefaultModSettings() {
@@ -23821,13 +23821,13 @@ function SWAM() {
     }
 
     function setModSettings(Bt) {
-        SWAM.Settings = Bt, Bt.audio.bgMusicMainMenu ? AddMusic() : RemoveMusic(), SWAM.ProwlerRadar.updateSettings(), SWAM.resizeMap(Bt.general.scalingFactor), config.minimapSize = Bt.ui.minimapSize, UI.resizeMinimap();
+        SWAM.Settings = Bt, Bt.audio.bgMusicMainMenu ? AddMusic() : RemoveMusic(), ProwlerRadar.updateSettings(), SWAM.resizeMap(Bt.general.scalingFactor), config.minimapSize = Bt.ui.minimapSize, UI.resizeMinimap();
         for (let Xt of SWAM.getSettingsProviders()) try {
             Xt.apply(Bt)
         } catch (Gt) {
             console.error(Gt)
         }
-        localStorage.setItem("SWAM_Settings", JSON.stringify(Bt))
+        SWAM.trigger("settingsApplied", Bt), localStorage.setItem("SWAM_Settings", JSON.stringify(Bt))
     }
 
     function freeSpectatorMode(Bt) {
@@ -24065,61 +24065,7 @@ function SWAM() {
         function () {
             var Bt = getTemplateContent("#killDeathInfo");
             $(".container-rank").after($(Bt))
-        }(), SWAM.GameLog = new function () {
-            let Xt = !0,
-                Gt = !1,
-                Yt = null,
-                Ht = null;
-            this.add = function (Wt) {
-                    if (game.state === Network.STATE.PLAYING) {
-                        let jt = $(Wt);
-                        jt.hasClass("flwkw") && !Xt && jt.hide(), jt.hasClass("flplayer") && !Gt && jt.hide();
-                        let zt = Ht[0],
-                            Vt = isScrolledToBottom(zt);
-                        Ht.append(jt), 1e3 < Ht.children().length && Ht.children().first().remove(), Vt && (zt.scrollTop = zt.scrollHeight)
-                    }
-                }, this.logKill = function (Wt, jt) {
-                    if (null != Wt && null != jt) {
-                        let Vt = "<div class=\"flwkw line\"><span class=\"playersel\" data-playerid=\"" + Wt.id + "\"><span class=\"flag small flag-" + Wt.flag + "\"></span><span class=\"nick\" style=\"color:" + (1 == Wt.team ? "#4d7fd5" : 2 == Wt.team ? "#dc4f46" : "") + ";\">" + UI.escapeHTML(Wt.name) + "</span></span><span class=\"text\" style=\"margin-left: 10px; margin-right: 10px; opacity: 0.6;\"> killed </span><span class=\"playersel\" data-playerid=\"" + jt.id + "\"><span class=\"flag small flag-" + jt.flag + "\"></span><span class=\"nick\" style=\"color:" + (1 == jt.team ? "#4d7fd5" : 2 == jt.team ? "#dc4f46" : "") + ";\">" + UI.escapeHTML(jt.name) + "</span></span></div>";
-                        this.add(Vt), SWAM.Settings.ui.showWhoKilledWho && SWAM.SmallLog.add(Vt)
-                    }
-                }, this.logPlayerConnection = function (Wt, jt) {
-                    if (null != Wt) {
-                        let Vt = "<div class=\"flplayer line\"><span class=\"playersel\" data-playerid=\"" + Wt.id + "\"><span class=\"flag small flag-" + Wt.flag + "\"></span><span class=\"nick\" style=\"color:" + (1 == Wt.team ? "#4d7fd5" : 2 == Wt.team ? "#dc4f46" : "") + ";\">" + UI.escapeHTML(Wt.name) + "</span></span><span class=\"text\" style=\"margin-left: 10px; margin-right: 10px; opacity: 0.6;\">" + (jt ? " joined." : "left.") + "</span></div>";
-                        this.add(Vt), SWAM.Settings.ui.showLogConnections && SWAM.SmallLog.add(Vt)
-                    }
-                }, this.logConnected = function () {
-                    let Wt = "";
-                    switch (game.gameType) {
-                        case SWAM.GAME_TYPE.FFA:
-                            Wt = "Free For All";
-                            break;
-                        case SWAM.GAME_TYPE.CTF:
-                            Wt = "Capture the flag";
-                            break;
-                        case SWAM.GAME_TYPE.BR:
-                            Wt = "Battle Royale";
-                    }
-                    this.add("<hr/><div style='margin: 20px; font-size: 16px;'>" + new Date().toLocaleString() + "  - Joined to " + Wt + "</div>")
-                }, this.logFlag = function (Wt) {
-                    this.add("<div class='message' style='position: relative; display: block;'>" + Wt + "</div>")
-                }, this.logNewMatch = function () {
-                    this.add("<hr/><div style='margin: 20px; font-size: 16px;'>" + new Date().toLocaleString() + "  - New CTF Match started</div>")
-                }, this.show = function () {
-                    Sound.UIClick(), Yt.show(), closeWhenClickOutside(Yt)
-                }, this.hide = function () {
-                    Yt.hide()
-                },
-                function () {
-                    Yt = $(getTemplate(".modalContainer .modalDialog").replace(/\$title/g, "Game log")).attr("id", "fullLog").css("z-index", "30").hide();
-                    let Wt = $(getTemplate("#fullLogTemplate")).removeAttr("id");
-                    Ht = $(".fullLogcontent", Wt), $(".modalContent", Yt).append(Wt), $(".chkFLKills", Wt).click(() => {
-                        Xt = !Xt, $(".flwkw", Wt).toggle()
-                    }), $(".chkFLPlayers", Wt).click(() => {
-                        Gt = !Gt, $(".flplayer", Wt).toggle()
-                    }), $("body").append(Yt)
-                }()
-        }, $("#logon > div.buttons").before($(getTemplate("#btnOpenExtensions")).click(function () {
+        }(), $("#logon > div.buttons").before($(getTemplate("#btnOpenExtensions")).click(function () {
             SWAM.OpenExtensionsWindow()
         })),
         function () {
@@ -24135,7 +24081,7 @@ function SWAM() {
                     showReddit: !0,
                     showWhoKilledWho: !0,
                     showLogConnections: !0,
-                    useSquaredScene: !1,
+                    useSquaredScene: !0,
                     minimapSize: 240
                 },
                 audio: {
@@ -24276,7 +24222,7 @@ function SWAM() {
     Players.add = function (Bt, Xt) {
         Players_add.call(Players, Bt, Xt);
         let Gt = Players.get(Bt.id);
-        Gt.scorePlace = 0, Gt.totalKills = 0, Gt.killCount = 0, Gt.deathCount = 0, Gt.captures = 0, Gt.sprites.bubble && (Gt.sprites.bubble.alpha = Gt.sprites.bubbleCenter.alpha = Gt.sprites.bubbleLeft.alpha = Gt.sprites.bubblePoint.alpha = Gt.sprites.bubbleRight.alpha = 0.4, Gt.sprites.bubbleText.alpha = 0.85);
+        Gt.scorePlace = 0, Gt.totalKills = 0, Gt.killCount = 0, Gt.deathCount = 0, Gt.captures = 0, Gt.lastMessageTime = 0, Gt.sprites.bubble && (Gt.sprites.bubble.alpha = Gt.sprites.bubbleCenter.alpha = Gt.sprites.bubbleLeft.alpha = Gt.sprites.bubblePoint.alpha = Gt.sprites.bubbleRight.alpha = 0.4, Gt.sprites.bubbleText.alpha = 0.85);
         game.state !== Network.STATE.PLAYING || (Gt.name = Gt.name.replace(nonprintRegex, "\uFFFD"), SWAM.GameLog.logPlayerConnection(Gt, !0), SWAM.trigger("playerAdded", Gt))
     };
     let Players_destroy = Players.destroy;
@@ -24452,8 +24398,9 @@ function SWAM() {
     };
     let UI_addChatLine = UI.addChatLine;
     UI.addChatLine = function (Bt, Xt, Gt) {
-        let Yt = ["-SWAM-PONG"],
-            Wt = -1 < $.inArray(Xt.toUpperCase(), ["-SWAM-PING"]);
+        let Yt = ["-SWAM-PONG"];
+        Bt.lastMessageTime = new Date().getTime();
+        let Wt = -1 < $.inArray(Xt.toUpperCase(), ["-SWAM-PING"]);
         for (var jt of Yt) Wt = Wt || Xt.startsWith(jt);
         if (!Wt) {
             let zt = Xt.match(getURLRegEx());
@@ -24471,7 +24418,7 @@ function SWAM() {
                 if (Bt.id != game.myID && !window.anonmod) {
                     let Vt = "starma.sh" === location.hostname.toLowerCase() ? "SM" : "AM",
                         qt = SWAM.getThemeFunction().themeName;
-                    Network.sendWhisper(Bt.id, `-SWAM-PONG ${Vt} ${qt}`)
+                    //Network.sendWhisper(Bt.id, `-SWAM-PONG ${Vt} ${qt}`)
                 }
                 return void UI_addChatLine.call(UI, Bt, Xt, Gt)
             }
@@ -24713,58 +24660,76 @@ function SWAM() {
                 Bt.stopImmediatePropagation(), Bt.stopPropagation(), Bt.preventDefault()
             }
         }
-    }, SWAM.radio.append(), SWAM.ProwlerRadar = new function () {
-        function Bt(Kt) {
-            if (jt) {
-                let Zt = Wt[Kt.id];
-                Zt || (Zt = new PIXI.Graphics, Zt.clear(), Zt.beginFill(16711680, .125), Zt.drawCircle(0, 0, zt), Zt.endFill(), Wt[Kt.id] = Zt, game.graphics.layers.groundobjects.addChild(Zt)), Zt.position.set(Kt.lowResPos.x, Kt.lowResPos.y), Zt.renderable = Kt.removedFromMap || 5 != Kt.type || Kt.team == Players.getMe().team || Kt.hidden || Kt.render && !Kt.stealthed ? !1 : !0
-            }
-        }
-
-        function Xt() {
-            var Kt = Players.getIDs(),
-                Zt = Players.getMe();
-            if (qt.hide(), !!jt)
-                for (var Qt in Kt) {
-                    var Jt = Players.get(Qt);
-                    if ((1 == game.myType || 4 == game.myType) && 5 == Jt.type && Jt.team != Zt.team) {
-                        var $t = Tools.distance(Jt.lowResPos.x, Jt.lowResPos.y, Zt.pos.x, Zt.pos.y);
-                        $t < zt && qt.show()
-                    }
-                    Bt(Jt, Zt)
+    }, SWAM.radio.append();
+    let ProwlerRadar = new function () {
+            function Xt(Zt) {
+                if (zt) {
+                    let Qt = jt[Zt.id];
+                    Qt || (Qt = new PIXI.Graphics, Qt.clear(), Qt.beginFill(16711680, .125), Qt.drawCircle(0, 0, Vt), Qt.endFill(), jt[Zt.id] = Qt, game.graphics.layers.groundobjects.addChild(Qt)), Qt.position.set(Zt.lowResPos.x, Zt.lowResPos.y), Qt.renderable = Zt.removedFromMap || 5 != Zt.type || Zt.team == Players.getMe().team || Zt.hidden || Zt.render && !Zt.stealthed ? !1 : !0
                 }
-        }
+            }
 
-        function Yt() {
-            for (let Kt in Wt) Ht(Kt)
-        }
+            function Gt() {
+                var Zt = Players.getIDs(),
+                    Qt = Players.getMe();
+                if (Kt.hide(), !!zt)
+                    for (var Jt in Zt) {
+                        var $t = Players.get(Jt);
+                        if ((1 == game.myType || 4 == game.myType) && 5 == $t.type && $t.team != Qt.team) {
+                            var en = Tools.distance($t.lowResPos.x, $t.lowResPos.y, Qt.pos.x, Qt.pos.y);
+                            en < Vt && Kt.show()
+                        }
+                        Xt($t, Qt)
+                    }
+            }
 
-        function Ht(Kt) {
-            let Zt = Wt[Kt];
-            Zt && (game.graphics.layers.groundobjects.removeChild(Zt), Zt.destroy(), delete Wt[Kt])
-        }
-        let Wt = {},
-            jt = !0,
-            zt = 600,
-            Vt = 0,
-            qt = $("<div id='prowlerAlert' style='position: absolute; top: 100px; left: calc(50% - 50px); width: 100px; height: 30px; background-color: red; opacity:0.6;display:none;'></div>");
-        this.updateSettings = function () {
-            "undefined" != typeof SWAM.Settings.general.useProwlerRadar && (jt = SWAM.Settings.general.useProwlerRadar, !jt && (qt.hide(), Yt()))
-        }, SWAM.on("playerChangedType", Kt => {
-            Bt(Players.get(Kt.id))
-        }), SWAM.on("playerKilled", (Kt, Zt) => {
-            Bt(Zt)
-        }), SWAM.on("playerStealth", Kt => {
-            let Zt = Players.get(Kt.id);
-            Bt(Zt)
-        }), SWAM.on("playerDestroyed", Kt => {
-            Ht(Kt.id)
-        }), SWAM.on("gamePrep", () => {
-            $("body").append(qt), Vt = setInterval(Xt, 500)
-        }), SWAM.on("gameWipe", () => {
-            Yt(), qt.remove(), Vt = clearInterval(Vt)
-        })
-    }, SWAM.chatinputVisible = function () {
+            function Ht() {
+                for (let Zt in jt) Wt(Zt)
+            }
+
+            function Wt(Zt) {
+                let Qt = jt[Zt];
+                Qt && (game.graphics.layers.groundobjects.removeChild(Qt), Qt.destroy(), delete jt[Zt])
+            }
+            let jt = {},
+                zt = !0,
+                Vt = 600,
+                qt = 0,
+                Kt = $("<div id='prowlerAlert' style='position: absolute; top: 100px; left: calc(50% - 50px); width: 100px; height: 30px; background-color: red; opacity:0.6;display:none;'></div>");
+            this.updateSettings = function () {
+                "undefined" != typeof SWAM.Settings.general.useProwlerRadar && (zt = SWAM.Settings.general.useProwlerRadar, !zt && (Kt.hide(), Ht()))
+            }, SWAM.on("playerChangedType", Zt => {
+                Xt(Players.get(Zt.id))
+            }), SWAM.on("playerKilled", (Zt, Qt) => {
+                Xt(Qt)
+            }), SWAM.on("playerStealth", Zt => {
+                let Qt = Players.get(Zt.id);
+                Xt(Qt)
+            }), SWAM.on("playerDestroyed", Zt => {
+                Wt(Zt.id)
+            }), SWAM.on("gamePrep", () => {
+                $("body").append(Kt), qt = setInterval(Gt, 500)
+            }), SWAM.on("gameWipe", () => {
+                Ht(), Kt.remove(), qt = clearInterval(qt)
+            })
+        },
+        SpectatorOnStart = new function () {
+            function Xt() {
+                clearTimeout(Ht), SWAM.off("keydown", Xt)
+            }
+            let Ht = 0,
+                Wt = !1;
+            SWAM.on("serverMessageReceived", function (zt) {
+                game.gameType != SWAM.GAME_TYPE.CTF || 1 == zt.type && zt.text == "Game starting in a second" && (Wt = null != game.spectatingID, Ht = 0)
+            }), SWAM.on("CTF_MatchStarted", function () {
+                Wt && (SWAM.on("keydown", Xt), Ht = setTimeout(() => {
+                    Network.spectateForce(), SWAM.off("keydown", Xt), Wt = !1, Ht = 0
+                }, 5e3))
+            }), SWAM.on("gameWipe", function () {
+                clearTimeout(Ht)
+            })
+        };
+    SWAM.chatinputVisible = function () {
         return "none" !== $("#chatinput").css("display")
     }, SWAM.getClosestPlayer = function (Bt, Xt) {
         let Gt = screenToMap(Bt, Xt);
@@ -24907,7 +24872,7 @@ function SWAM() {
                 SWAM.GameLog.show()
             }), $("body").append(Xt)
         }), SWAM.on("gameWipe", () => {
-            Xt && (console.log("removing"), Xt.remove(), Xt = null)
+            Xt && (Xt.remove(), Xt = null)
         }), this.add = function (Gt) {
             if (game.state === Network.STATE.PLAYING && 0 != Xt.length) {
                 let Yt = $(Gt);
@@ -24918,6 +24883,60 @@ function SWAM() {
                 }, 3e4)
             }
         }
+    }, SWAM.GameLog = new function () {
+        let Gt = !0,
+            Yt = !1,
+            Ht = null,
+            Wt = null;
+        this.add = function (jt) {
+                if (game.state === Network.STATE.PLAYING) {
+                    let zt = $(jt);
+                    zt.hasClass("flwkw") && !Gt && zt.hide(), zt.hasClass("flplayer") && !Yt && zt.hide();
+                    let Vt = Wt[0],
+                        qt = isScrolledToBottom(Vt);
+                    Wt.append(zt), 1e3 < Wt.children().length && Wt.children().first().remove(), qt && (Vt.scrollTop = Vt.scrollHeight)
+                }
+            }, this.logKill = function (jt, zt) {
+                if (null != jt && null != zt) {
+                    let qt = "<div class=\"flwkw line\"><span class=\"playersel\" data-playerid=\"" + jt.id + "\"><span class=\"flag small flag-" + jt.flag + "\"></span><span class=\"nick\" style=\"color:" + (1 == jt.team ? "#4d7fd5" : 2 == jt.team ? "#dc4f46" : "") + ";\">" + UI.escapeHTML(jt.name) + "</span></span><span class=\"text\" style=\"margin-left: 10px; margin-right: 10px; opacity: 0.6;\"> killed </span><span class=\"playersel\" data-playerid=\"" + zt.id + "\"><span class=\"flag small flag-" + zt.flag + "\"></span><span class=\"nick\" style=\"color:" + (1 == zt.team ? "#4d7fd5" : 2 == zt.team ? "#dc4f46" : "") + ";\">" + UI.escapeHTML(zt.name) + "</span></span></div>";
+                    this.add(qt), SWAM.Settings.ui.showWhoKilledWho && SWAM.SmallLog.add(qt)
+                }
+            }, this.logPlayerConnection = function (jt, zt) {
+                if (null != jt) {
+                    let qt = "<div class=\"flplayer line\"><span class=\"playersel\" data-playerid=\"" + jt.id + "\"><span class=\"flag small flag-" + jt.flag + "\"></span><span class=\"nick\" style=\"color:" + (1 == jt.team ? "#4d7fd5" : 2 == jt.team ? "#dc4f46" : "") + ";\">" + UI.escapeHTML(jt.name) + "</span></span><span class=\"text\" style=\"margin-left: 10px; margin-right: 10px; opacity: 0.6;\">" + (zt ? " joined." : "left.") + "</span></div>";
+                    this.add(qt), SWAM.Settings.ui.showLogConnections && (SWAM.SmallLog.add(qt), !zt && 3e4 > new Date().getTime() - jt.lastMessageTime && UI.addChatMessage(qt, !0))
+                }
+            }, this.logConnected = function () {
+                let jt = "";
+                switch (game.gameType) {
+                    case SWAM.GAME_TYPE.FFA:
+                        jt = "Free For All";
+                        break;
+                    case SWAM.GAME_TYPE.CTF:
+                        jt = "Capture the flag";
+                        break;
+                    case SWAM.GAME_TYPE.BR:
+                        jt = "Battle Royale";
+                }
+                this.add("<hr/><div style='margin: 20px; font-size: 16px;'>" + new Date().toLocaleString() + "  - Joined to " + jt + "</div>")
+            }, this.logFlag = function (jt) {
+                this.add("<div class='message' style='position: relative; display: block;'>" + jt + "</div>")
+            }, this.logNewMatch = function () {
+                this.add("<hr/><div style='margin: 20px; font-size: 16px;'>" + new Date().toLocaleString() + "  - New CTF Match started</div>")
+            }, this.show = function () {
+                Sound.UIClick(), Ht.show(), closeWhenClickOutside(Ht)
+            }, this.hide = function () {
+                Ht.hide()
+            },
+            function () {
+                Ht = $(getTemplate(".modalContainer .modalDialog").replace(/\$title/g, "Game log")).attr("id", "fullLog").css("z-index", "30").hide();
+                let jt = $(getTemplate("#fullLogTemplate")).removeAttr("id");
+                Wt = $(".fullLogcontent", jt), $(".modalContent", Ht).append(jt), $(".chkFLKills", jt).click(() => {
+                    Gt = !Gt, $(".flwkw", jt).toggle()
+                }), $(".chkFLPlayers", jt).click(() => {
+                    Yt = !Yt, $(".flplayer", jt).toggle()
+                }), $("body").append(Ht)
+            }()
     }, SWAM.updatePlayersNamePlate = function () {
         var Bt = Players.getIDs(),
             Xt = Players.getMe();
@@ -25419,10 +25438,12 @@ SWAM.injectTextures = function (Bt, Xt, Gt, Yt, Ht) {
 
         function cn() {
             let vn = $("#selTheme", yn);
-            vn.html(""), $.each(sn, function (Tn, Sn) {
+            vn.html("");
+            let Tn = Object.values(sn).sort((Sn, En) => Sn.themeName > En.themeName);
+            $.each(Tn, function (Sn, En) {
                 vn.append($("<option>", {
-                    value: Sn.id,
-                    text: Sn.themeName
+                    value: En.id,
+                    text: En.themeName
                 }))
             }), vn.val(dn)
         }
@@ -25875,7 +25896,7 @@ function showRequestlyWarning() {
     }
 }
 SWAM.loadFiles(() => {
-    SWAM.trigger("extensionsLoaded"), SWAM.loadTheme(), SWAM.trigger("themeLoaded"), loadGameCode(), SWAM.Theme.loadGameModules(), SWAM.trigger("gameLoaded"), RunGame(), SWAM(), setTimeout(function () {
+    window.specialTheme = "Russia2018WC", SWAM.trigger("extensionsLoaded"), SWAM.loadTheme(), SWAM.trigger("themeLoaded"), loadGameCode(), SWAM.Theme.loadGameModules(), SWAM.trigger("gameLoaded"), RunGame(), SWAM(), setTimeout(function () {
         $("#LoadingMainScreen").remove()
     }, 2e3), SWAM.trigger("gameRunning")
 });
