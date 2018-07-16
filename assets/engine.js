@@ -24942,7 +24942,7 @@ function SWAM() {
             Xt = Players.getMe();
         for (var Gt in Bt) {
             var Yt = Players.get(Gt);
-            "undefined" != typeof Yt.scorePlace && (Yt.sprites.name.text = Yt.scorePlace + ". " + Yt.name + (Yt.team == Xt.team ? " [" + Math.floor(100 * parseFloat(Yt.health)) + "]" : ""))
+            "undefined" != typeof Yt.scorePlace && (Yt.sprites.name.text = Yt.scorePlace + ". " + Yt.name + " [" + Math.floor(100 * parseFloat(Yt.health)) + "]")
         }
     };
     let sentMessages = [],
