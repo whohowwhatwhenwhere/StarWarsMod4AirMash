@@ -733,8 +733,7 @@
                         })).replace(Ii, "$1"), Qi, no < Ji && jr(Ki.slice(no, Ji)), Ji < $i && jr(Ki = Ki.slice(Ji)), Ji < $i && Ur(Ki))
                     }
                     io.push(Qi)
-                }
-            return Gr(io)
+                } return Gr(io)
         }
         var ui = "sizzle" + 1 * new Date,
             pi = Cr.document,
@@ -1195,8 +1194,7 @@
                                         if (fo(co, so || ai, lo)) {
                                             uo.push(co);
                                             break
-                                        }
-                                    po && (ci = vo)
+                                        } po && (ci = vo)
                                 }
                                 ao && ((co = !fo && co) && go--, oo && yo.push(co))
                             }
@@ -1255,8 +1253,7 @@
                 if (1 === Cr.nodeType) {
                     if (void 0 !== Ar && Vn(Cr).is(Ar)) break;
                     Mr.push(Cr)
-                }
-            return Mr
+                } return Mr
         },
         ea = function (Cr, Pr) {
             for (var Ar = []; Cr; Cr = Cr.nextSibling) 1 === Cr.nodeType && Cr !== Pr && Ar.push(Cr);
@@ -1336,8 +1333,7 @@
                         if (11 > Ar.nodeType && (Dr ? -1 < Dr.index(Ar) : 1 === Ar.nodeType && Vn.find.matchesSelector(Ar, Cr))) {
                             Ir.push(Ar);
                             break
-                        }
-            return this.pushStack(1 < Ir.length ? Vn.uniqueSort(Ir) : Ir)
+                        } return this.pushStack(1 < Ir.length ? Vn.uniqueSort(Ir) : Ir)
         },
         index: function (Cr) {
             return Cr ? "string" == typeof Cr ? Xn.call(Vn(Cr), this[0]) : Xn.call(this, Cr.jquery ? Cr[0] : Cr) : this[0] && this[0].parentNode ? this.first().prevAll().length : -1
@@ -1820,8 +1816,7 @@
                             elem: kr,
                             handlers: Ir
                         })
-                    }
-            return kr = this, Lr < Pr.length && Or.push({
+                    } return kr = this, Lr < Pr.length && Or.push({
                 elem: kr,
                 handlers: Pr.slice(Lr)
             }), Or
@@ -2286,8 +2281,7 @@
                             Gr = !0
                         }
                         Ur[Mr] = Yr && Yr[Mr] || Vn.style(Cr, Mr)
-                    }
-                if ((Lr = !Vn.isEmptyObject(Pr)) || !Vn.isEmptyObject(Ur))
+                    } if ((Lr = !Vn.isEmptyObject(Pr)) || !Vn.isEmptyObject(Ur))
                     for (Mr in ("width" in Pr || "height" in Pr) && 1 === Cr.nodeType && (Ar.overflow = [Xr.overflow, Xr.overflowX, Xr.overflowY], null == (kr = Yr && Yr.display) && (kr = ha.get(Cr, "display")), "none" === (Nr = Vn.css(Cr, "display")) && (kr ? Nr = kr : (en([Cr], !0), kr = Cr.style.display || kr, Nr = Vn.css(Cr, "display"), en([Cr]))), ("inline" === Nr || "inline-block" === Nr && null != kr) && "none" === Vn.css(Cr, "float") && (Lr || (Br.done(function () {
                             Xr.display = kr
                         }), null == kr && (Nr = Xr.display, kr = "none" === Nr ? "" : Nr)), Xr.display = "inline-block")), Ar.overflow && (Xr.overflow = "hidden", Br.always(function () {
@@ -2504,8 +2498,7 @@
                     if (Rr = Mn(Ar), Mr = 1 === Ar.nodeType && " " + An(Rr) + " ") {
                         for (Dr = 0; Ir = Pr[Dr++];) 0 > Mr.indexOf(" " + Ir + " ") && (Mr += Ir + " ");
                         Rr !== (Or = An(Mr)) && Ar.setAttribute("class", Or)
-                    }
-            return this
+                    } return this
         },
         removeClass: function (Cr) {
             var Lr = 0,
@@ -2520,8 +2513,7 @@
                         for (Dr = 0; Ir = Pr[Dr++];)
                             for (; - 1 < Mr.indexOf(" " + Ir + " ");) Mr = Mr.replace(" " + Ir + " ", " ");
                         Rr !== (Or = An(Mr)) && Ar.setAttribute("class", Or)
-                    }
-            return this
+                    } return this
         },
         toggleClass: function (Cr, Pr) {
             var Ar = typeof Cr;
@@ -2574,8 +2566,7 @@
                         if (((Ar = Rr[Mr]).selected || Mr === Ir) && !Ar.disabled && (!Ar.parentNode.disabled || !Ht(Ar.parentNode, "optgroup"))) {
                             if (Pr = Vn(Ar).val(), Dr) return Pr;
                             Or.push(Pr)
-                        }
-                    return Or
+                        } return Or
                 },
                 set: function (Cr, Pr) {
                     for (var Rr = Cr.options, Ir = Vn.makeArray(Pr), Dr = Rr.length, Ar, Mr; Dr--;)((Mr = Rr[Dr]).selected = -1 < Vn.inArray(Vn.valHooks.option.get(Mr), Ir)) && (Ar = !0);
@@ -2776,8 +2767,7 @@
                             if (ci[li] && ci[li].test(di)) {
                                 hi.unshift(li);
                                 break
-                            }
-                    if (hi[0] in si) ui = hi[0];
+                            } if (hi[0] in si) ui = hi[0];
                     else {
                         for (li in si) {
                             if (!hi[0] || ii.converters[li + " " + hi[0]]) {
@@ -2804,8 +2794,7 @@
                                 if ((ci = li.split(" "))[1] === ui && (pi = fi[hi + " " + ci[0]] || fi["* " + ci[0]])) {
                                     !0 === pi ? pi = fi[li] : !0 !== fi[li] && (ui = ci[0], gi.unshift(ci[1]));
                                     break
-                                }
-                        if (!0 !== pi)
+                                } if (!0 !== pi)
                             if (pi && ii.throws) oi = pi(oi);
                             else try {
                                 oi = pi(oi)
@@ -4047,8 +4036,7 @@ function (Bt) {
                     else {
                         if (tn(dn), (dn = on = dn.prev) === dn.next) return null;
                         sn = !0
-                    }
-                while (sn || dn !== on);
+                    } while (sn || dn !== on);
                 return on
             }
 
@@ -4915,8 +4903,7 @@ function (Bt) {
                         if (Qt[tn] !== Jt[tn]) {
                             en = tn;
                             break
-                        }
-                    var nn = [];
+                        } var nn = [];
                     for (tn = en; tn < Qt.length; tn++) nn.push("..");
                     return (nn = nn.concat(Jt.slice(en))).join("/")
                 }, Gt.sep = "/", Gt.delimiter = ":", Gt.dirname = function (qt) {
@@ -5100,7 +5087,7 @@ function (Bt) {
                                 if ((On = Tn[An]) < En && ++Sn > on && jt("overflow"), On == En) {
                                     for (Rn = Sn, In = sn; Dn = In <= Pn ? dn : In >= Pn + ln ? ln : In - Pn, !(Rn < Dn); In += sn) Fn = Rn - Dn, Nn = sn - Dn, Bn.push(vn(Zt(Dn + Fn % Nn, 0))), Rn = xn(Fn / Nn);
                                     Bn.push(vn(Zt(Rn, 0))), Pn = Qt(Sn, kn, wn == Cn), Sn = 0, ++wn
-                                }++Sn, ++En
+                                }++ Sn, ++En
                         }
                         return Bn.join("")
                     }
@@ -5306,8 +5293,7 @@ function (Bt) {
                                     In && (Mn.push(In[1]), Rn.unshift(In[2])), Rn.length && (cn = "/" + Rn.join(".") + cn), this.hostname = Mn.join(".");
                                     break
                                 }
-                            }
-                    this.hostname = 255 < this.hostname.length ? "" : this.hostname.toLowerCase(), Tn || (this.hostname = jt.toASCII(this.hostname));
+                            } this.hostname = 255 < this.hostname.length ? "" : this.hostname.toLowerCase(), Tn || (this.hostname = jt.toASCII(this.hostname));
                     var Dn = this.port ? ":" + this.port : "",
                         On = this.hostname || "";
                     this.host = On + Dn, this.href += this.host, Tn && (this.hostname = this.hostname.substr(1, this.hostname.length - 2), "/" !== cn[0] && (cn = "/" + cn))
@@ -6121,8 +6107,7 @@ function (Bt) {
                                     var rn = an.hitArea,
                                         on = an.worldTransform;
                                     an.hitArea ? (tn.style.left = (on.tx + rn.x * on.a) * $t + "px", tn.style.top = (on.ty + rn.y * on.d) * en + "px", tn.style.width = rn.width * on.a * $t + "px", tn.style.height = rn.height * on.d * en + "px") : (rn = an.getBounds(), this.capHitArea(rn), tn.style.left = rn.x * $t + "px", tn.style.top = rn.y * en + "px", tn.style.width = rn.width * $t + "px", tn.style.height = rn.height * en + "px")
-                                }
-                            this.renderId++
+                                } this.renderId++
                         }
                     }, Qt.prototype.capHitArea = function (Jt) {
                         0 > Jt.x && (Jt.width += Jt.x, Jt.x = 0), 0 > Jt.y && (Jt.height += Jt.y, Jt.y = 0), Jt.x + Jt.width > this.renderer.width && (Jt.width = this.renderer.width - Jt.x), Jt.y + Jt.height > this.renderer.height && (Jt.height = this.renderer.height - Jt.y)
@@ -7148,8 +7133,7 @@ function (Bt) {
                                     for (var hn = 0; hn < cn.holes.length; hn++)
                                         if (cn.holes[hn].contains(nn.x, nn.y)) return !1;
                                 return !0
-                            }
-                        return !1
+                            } return !1
                     }, dn.prototype.updateLocalBounds = function () {
                         var ln = 1 / 0,
                             un = -1 / 0,
@@ -9249,8 +9233,7 @@ function (Bt) {
                             name: $t,
                             type: Jt
                         })
-                    }
-                return zt
+                    } return zt
             }
             Gt.__esModule = !0, Gt.default = function (jt, Wt) {
                 var Vt = Yt(jt),
@@ -10540,8 +10523,7 @@ function (Bt) {
                             if (255 !== Jt[nn + rn]) {
                                 an = !0;
                                 break
-                            }
-                        if (an) break;
+                            } if (an) break;
                         nn += en
                     }
                     for (zt.ascent = Zt - tn, nn = $t - en, an = !1, tn = Qt; tn > Zt; --tn) {
@@ -10549,8 +10531,7 @@ function (Bt) {
                             if (255 !== Jt[nn + on]) {
                                 an = !0;
                                 break
-                            }
-                        if (an) break;
+                            } if (an) break;
                         nn -= en
                     }
                     return zt.descent = tn - Zt, zt.fontSize = zt.ascent + zt.descent, jt._fonts[Wt] = zt, zt
@@ -12058,14 +12039,12 @@ function (Bt) {
                                 if (rn[sn].match(/(px|pt|em|%)/)) {
                                     on = sn, this._fontSize = rn[sn];
                                     break
-                                }
-                            this._fontWeight = "normal";
+                                } this._fontWeight = "normal";
                             for (var dn = 0; dn < on; ++dn)
                                 if (rn[dn].match(/(bold|bolder|lighter|100|200|300|400|500|600|700|800|900)/)) {
                                     this._fontWeight = rn[dn];
                                     break
-                                }
-                            if (-1 < on && on < rn.length - 1) {
+                                } if (-1 < on && on < rn.length - 1) {
                                 this._fontFamily = "";
                                 for (var ln = on + 1; ln < rn.length; ++ln) this._fontFamily += rn[ln] + " ";
                                 this._fontFamily = this._fontFamily.slice(0, -1)
@@ -13865,8 +13844,7 @@ function (Bt) {
                                             var rn = this.configureInteractionEventForDOMEvent(this.eventData, an.originalEvent, an);
                                             this.processInteractive(rn, this.renderer._lastObjectRendered, this.processPointerOverOut, !0)
                                         }
-                                    }
-                                this.setCursorMode(this.cursor)
+                                    } this.setCursorMode(this.cursor)
                             }
                     }, en.prototype.setCursorMode = function (tn) {
                         if (tn = tn || "default", this.currentCursorMode !== tn) {
@@ -15345,8 +15323,7 @@ function (Bt) {
                     for (var nn = 0; nn < $t._textures.length; nn++)
                         if ($t._textures[nn] instanceof Kt.Texture) {
                             var an = $t._textures[nn].baseTexture; - 1 === en.indexOf(an) && (en.push(an), tn = !0)
-                        }
-                return tn
+                        } return tn
             }
 
             function Ht($t, en) {
@@ -15422,8 +15399,7 @@ function (Bt) {
                                 if (this.uploadHooks[nn](this.uploadHookHelper, en)) {
                                     this.queue.shift(), tn = !0;
                                     break
-                                }
-                        tn || this.queue.shift()
+                                } tn || this.queue.shift()
                     }
                     if (this.queue.length) Qt.addOnce(this.tick, this, Kt.UPDATE_PRIORITY.UTILITY);
                     else {
@@ -16019,8 +15995,7 @@ function () {
                 if (an = en._soundById(tn[nn]), an && (Jt || en._stopFade(tn[nn]), en._webAudio && !an._muted)) {
                     var rn = Xt.ctx.currentTime;
                     an._volume = Kt, null == $t && an._node.gain.setValueAtTime(Kt, rn), an._node.gain.linearRampToValueAtTime(Zt, rn + Qt / 1e3)
-                }
-            return en
+                } return en
         },
         _startFadeInterval: function (Kt, Zt, Qt, Jt, $t) {
             var en = this,
@@ -16067,8 +16042,7 @@ function () {
                     var tn = Qt.seek(Zt[en]),
                         nn = 1e3 * ((Qt._sprite[$t._sprite][0] + Qt._sprite[$t._sprite][1]) / 1e3 - tn) / Math.abs($t._rate);
                     !Qt._endTimers[Zt[en]] && $t._paused || (Qt._clearTimer(Zt[en]), Qt._endTimers[Zt[en]] = setTimeout(Qt._ended.bind(Qt, $t), nn)), Qt._emit("rate", $t._id)
-                }
-            return Qt
+                } return Qt
         },
         seek: function () {
             var Qt = this,
@@ -16124,8 +16098,7 @@ function () {
                 if (Xt._howls[Qt]._src === Kt._src) {
                     $t = !1;
                     break
-                }
-            return Ht && $t && delete Ht[Kt._src], Xt.noAudio = !1, Kt._state = "unloaded", Kt._sounds = [], Kt = null, null
+                } return Ht && $t && delete Ht[Kt._src], Xt.noAudio = !1, Kt._state = "unloaded", Kt._sounds = [], Kt = null, null
         },
         on: function (Kt, Zt, Qt, Jt) {
             var $t = this["_on" + Kt];
@@ -16152,8 +16125,7 @@ function () {
                 else {
                     var tn = Object.keys(this);
                     for ($t = 0; $t < tn.length; $t++) 0 === tn[$t].indexOf("_on") && Array.isArray(this[tn[$t]]) && (this[tn[$t]] = [])
-                }
-            return this
+                } return this
         },
         once: function (Kt, Zt, Qt) {
             return this.on(Kt, Zt, Qt, 1), this
@@ -16364,8 +16336,7 @@ function () {
             if (zt = Yt._soundById(jt[Wt]), zt) {
                 if ("number" != typeof Xt) return zt._stereo;
                 zt._stereo = Xt, zt._pos = [Xt, 0, 0], zt._node && (zt._pannerAttr.panningModel = "equalpower", zt._panner && zt._panner.pan || Bt(zt, Ht), "spatial" == Ht ? zt._panner.setPosition(Xt, 0, Math.abs(1 - Xt)) : zt._panner.pan.value = Xt), Yt._emit("stereo", zt._id)
-            }
-        return Yt
+            } return Yt
     }, Howl.prototype.pos = function (Xt, Gt, Yt, Ht) {
         var jt = this;
         if (!jt._webAudio) return jt;
@@ -16383,8 +16354,7 @@ function () {
             if (Vt = jt._soundById(Wt[zt]), Vt) {
                 if ("number" != typeof Xt) return Vt._pos;
                 Vt._pos = [Xt, Gt, Yt], Vt._node && (Vt._panner && !Vt._panner.pan || Bt(Vt, "spatial"), Vt._panner.setPosition(Xt, Gt, Yt)), jt._emit("pos", Vt._id)
-            }
-        return jt
+            } return jt
     }, Howl.prototype.orientation = function (Xt, Gt, Yt, Ht) {
         var jt = this;
         if (!jt._webAudio) return jt;
@@ -16402,8 +16372,7 @@ function () {
             if (Vt = jt._soundById(Wt[zt]), Vt) {
                 if ("number" != typeof Xt) return Vt._orientation;
                 Vt._orientation = [Xt, Gt, Yt], Vt._node && (Vt._panner || (Vt._pos || (Vt._pos = jt._pos || [0, 0, -0.5]), Bt(Vt, "spatial")), Vt._panner.setOrientation(Xt, Gt, Yt)), jt._emit("orientation", Vt._id)
-            }
-        return jt
+            } return jt
     }, Howl.prototype.pannerAttr = function () {
         var Ht = arguments,
             Xt, Gt, Yt;
@@ -16446,8 +16415,7 @@ function () {
                 };
                 var Vt = Yt._panner;
                 Vt ? (Vt.coneInnerAngle = zt.coneInnerAngle, Vt.coneOuterAngle = zt.coneOuterAngle, Vt.coneOuterGain = zt.coneOuterGain, Vt.distanceModel = zt.distanceModel, Vt.maxDistance = zt.maxDistance, Vt.refDistance = zt.refDistance, Vt.rolloffFactor = zt.rolloffFactor, Vt.panningModel = zt.panningModel) : (Yt._pos || (Yt._pos = this._pos || [0, 0, -0.5]), Bt(Yt, "spatial"))
-            }
-        return this
+            } return this
     }, Sound.prototype.init = function (Xt) {
         return function () {
             var Gt = this._parent;
@@ -16604,8 +16572,7 @@ function (Bt) {
                 else {
                     for (var nn = "", an = 0, rn = Jt.length; an < rn; an += 1) nn += Jt[an] + " " + $t + ", ";
                     en[tn] = nn.slice(0, -2)
-                }
-        return en
+                } return en
     }, Kt.getVendorStyle = function (Qt, Jt) {
         var $t = Kt.configStylePropertyObject(Qt);
         for (var en in $t) $t.hasOwnProperty(en) && ($t[en] = Jt);
@@ -16936,8 +16903,7 @@ function (Bt) {
             if (this.ids[$t] === Qt) {
                 Jt.id = $t, Jt.identifier = this.ids[$t], delete this.ids[$t];
                 break
-            }
-        return Jt
+            } return Jt
     }, Yt.prototype.onmove = function (Qt) {
         return this.onAny("move", Qt), !1
     }, Yt.prototype.onend = function (Qt) {
@@ -18549,8 +18515,7 @@ function loadGameCode() {
                         en[$t++] = 128 | 63 & nn >> 6
                     }
                     en[$t++] = 128 | 63 & nn
-                }
-            return en.subarray(0, $t)
+                } return en.subarray(0, $t)
         }, Tools.decodeUTF8 = function (Jt) {
             for (var $t = "", en = 0, tn; en < Jt.length;) {
                 if (tn = Jt[en++], 127 < tn) {
@@ -19338,8 +19303,7 @@ function loadGameCode() {
                             if (sn.beginFill(16777215, .2), sn.drawCircle(config.walls[dn][0], config.walls[dn][1], config.walls[dn][2]), sn.endFill(), window.AutoPilot && AutoPilot.debug) {
                                 var ln = AutoPilot.getGraphBoundingBox(config.walls[dn][0], config.walls[dn][1], config.walls[dn][2]);
                                 sn.beginFill(16711680, .2), sn.drawRect(100 * ln.p1.x - 16384, 100 * ln.p1.y - 8192, 100 * (ln.p2.x - ln.p1.x + 1), 100 * (ln.p2.y - ln.p1.y + 1)), sn.endFill()
-                            }
-                        if (window.AutoPilot && AutoPilot.debug) {
+                            } if (window.AutoPilot && AutoPilot.debug) {
                             sn.lineColor = 16777215, sn.lineStyle(1, 16777215);
                             for (var un = -16383; 16383 >= un; un += 100) sn.moveTo(un, -8192), sn.lineTo(un, 8192);
                             for (var pn = -8192; 8192 >= pn; pn += 100) sn.moveTo(-16383, pn), sn.lineTo(16384, pn)
@@ -20778,8 +20742,7 @@ function loadGameCode() {
                         if (Gt[Tn]) {
                             if (vn && (Yt[38] || Yt[40] || Yt[37] || Yt[39])) continue;
                             Gt[Tn] = !1, xn(Tn)
-                        }
-                    for (var En in Yt) vn && (38 == En || 40 == En || 37 == En || 39 == En) || (Yt[En] = !1)
+                        } for (var En in Yt) vn && (38 == En || 40 == En || 37 == En || 39 == En) || (Yt[En] = !1)
                 }
             }, Input.touchCloseAll = function () {
                 game.state == Network.STATE.LOGIN ? (Games.closeDropdowns(), UI.closeLogin()) : game.state == Network.STATE.PLAYING && (UI.closeAllPanels(), UI.closeTooltip())
@@ -21259,8 +21222,7 @@ function loadGameCode() {
                 if (-1 == Vt.indexOf(Yt[Kt])) {
                     if (null == (Wt = Gt[Yt[Kt]])) continue;
                     Wt.state.hasBadge && (Wt.state.hasBadge = !1, Wt.sprites.badge.visible = !1)
-                }
-            Yt = Vt
+                } Yt = Vt
         }, Players.chat = function (jt) {
             var Wt = Gt[jt.id];
             null != Wt && UI.addChatLine(Wt, jt.text, 0)
@@ -21413,8 +21375,7 @@ function loadGameCode() {
                         Ht = this.speed.x, jt = this.speed.y, this.speed.x += this.accel.x * zt, this.speed.y += this.accel.y * zt;
                         var Vt = this.speed.length();
                         Vt > this.maxSpeed && this.speed.multiply(this.maxSpeed / Vt), this.state.inactive && this.speed.multiply(1 - .03 * zt), this.pos.x += zt * Ht + .5 * (this.speed.x - Ht) * zt, this.pos.y += zt * jt + .5 * (this.speed.y - jt) * zt, -16384 > this.pos.x && (this.pos.x += 32768), 16384 < this.pos.x && (this.pos.x -= 32768), -8192 > this.pos.y && (this.pos.y += 16384), 8192 < this.pos.y && (this.pos.y -= 16384), this.clientCalcs(zt)
-                    }
-                this.missile && !this.state.inactive && Sound.updateThruster(1, this, this.visibility), this.state.inactive && 0 < this.sprites.sprite.alpha && (this.sprites.sprite.alpha -= 0.2)
+                    } this.missile && !this.state.inactive && Sound.updateThruster(1, this, this.visibility), this.state.inactive && 0 < this.sprites.sprite.alpha && (this.sprites.sprite.alpha -= 0.2)
             }
         }
         clientCalcs(Gt) {
@@ -22180,7 +22141,7 @@ function loadGameCode() {
                     else Kn = jn + "", Zn = On.c == Network.SERVERPACKET.SCORE_DETAILED_CTF ? " capture" : " kill", 1 < jn && (Zn += "s");
                     qn = "<div class=\"mvpbadge\">MVP</div><div class=\"flag flag-" + Wn.flag + "\"></div><div class=\"name\">" + UI.escapeHTML(Wn.name) + "</div><div class=\"damage\">&nbsp;&nbsp;&bull;&nbsp;&nbsp;" + Kn + Zn + "</div>"
                 }
-                $("#scoreplayers").html(Vn), $("#scoretable").html(Fn), $("#scorecontainer").html(Hn), $("#scoremvp").html(qn), $("#scorecontainer div").click(SWAM.scoreboard_click_handler)
+                $("#scoreplayers").html(Vn), $("#scoretable").html(Fn), $("#scorecontainer").html(Hn), $("#scoremvp").html(qn)
             }
         }, UI.popMenu = function (On, Ln) {
             if (game.state == Network.STATE.LOGIN) return Games.closeDropdowns(), void UI.closeLogin();
@@ -22963,8 +22924,7 @@ function loadGameCode() {
                                 color: Tools.rand(0, 1),
                                 colorDir: .5 > Tools.rand(0, 1) ? -1 : 1
                             }
-                        }
-            for (var Yn in an) null == Dn[Yn] ? (game.graphics.layers.powerups.removeChild(an[Yn].sprite), an[Yn].sprite.destroy(), delete an[Yn]) : (an[Yn].rotation += an[Yn].rotationSpeed * game.timeFactor, an[Yn].opacity += an[Yn].opacitySpeed * game.timeFactor, an[Yn].opacity > an[Yn].maxOpacity && (an[Yn].opacity = an[Yn].maxOpacity), an[Yn].color += .005 * an[Yn].colorDir * game.timeFactor, 0 > an[Yn].color && (an[Yn].colorDir = 1), 1 < an[Yn].color && (an[Yn].colorDir = -1), an[Yn].sprite.rotation = an[Yn].rotation, an[Yn].sprite.alpha = an[Yn].opacity, an[Yn].sprite.tint = Tools.colorLerp(16427014, 16404230, an[Yn].color))
+                        } for (var Yn in an) null == Dn[Yn] ? (game.graphics.layers.powerups.removeChild(an[Yn].sprite), an[Yn].sprite.destroy(), delete an[Yn]) : (an[Yn].rotation += an[Yn].rotationSpeed * game.timeFactor, an[Yn].opacity += an[Yn].opacitySpeed * game.timeFactor, an[Yn].opacity > an[Yn].maxOpacity && (an[Yn].opacity = an[Yn].maxOpacity), an[Yn].color += .005 * an[Yn].colorDir * game.timeFactor, 0 > an[Yn].color && (an[Yn].colorDir = 1), 1 < an[Yn].color && (an[Yn].colorDir = -1), an[Yn].sprite.rotation = an[Yn].rotation, an[Yn].sprite.alpha = an[Yn].opacity, an[Yn].sprite.tint = Tools.colorLerp(16427014, 16404230, an[Yn].color))
         };
         var En = function () {
             if (on) {
@@ -23759,9 +23719,9 @@ function createModal(Bt) {
 
 function closeWhenClickOutside(Bt, Xt = null) {
     let Gt = function (Yt) {
-        Bt.is(Yt.target) || 0 !== Bt.has(Yt.target).length || (Bt.hide(), $(document).off("mousedown", Gt), Yt.stopImmediatePropagation(), Yt.stopPropagation(), Yt.preventDefault(), Sound.UIClick(), Xt && Xt())
+        Bt.is(Yt.target) || 0 !== Bt.has(Yt.target).length || (Bt.hide(), $(document).off("mousedown", Gt), Sound.UIClick(), Xt && Xt())
     };
-    $(document).mousedown(Gt)
+    return $(document).mousedown(Gt), Gt
 }
 
 function forEachPlayer(Bt) {
@@ -23795,7 +23755,7 @@ window.Base64 = {
         for (var Xt = "", Gt = 0, Yt = 0, jt = 0; Gt < Bt.length;) Yt = Bt.charCodeAt(Gt), 128 > Yt ? (Xt += String.fromCharCode(Yt), Gt++) : 191 < Yt && 224 > Yt ? (jt = Bt.charCodeAt(Gt + 1), Xt += String.fromCharCode((31 & Yt) << 6 | 63 & jt), Gt += 2) : (jt = Bt.charCodeAt(Gt + 1), c3 = Bt.charCodeAt(Gt + 2), Xt += String.fromCharCode((15 & Yt) << 12 | (63 & jt) << 6 | 63 & c3), Gt += 3);
         return Xt
     }
-}, window.SWAM_version = "2.4091401", SWAM.version = window.SWAM_version, SWAM.debug = !1;
+}, window.SWAM_version = "2.4093001", SWAM.version = window.SWAM_version, SWAM.debug = !1;
 
 function SWAM() {
     function getDefaultModSettings() {
@@ -23879,8 +23839,30 @@ function SWAM() {
         zt()
     }
 
+    function replaceSpecialWordsInChat(Bt) {
+        return "shrug" === Bt.toLowerCase() ? "\xAF\\_(\u30C4)_/\xAF" : Bt
+    }
+
+    function replaceTeamEmotes(Bt) {
+        return "-cap-" === Bt ? Bt = 1 == game.myTeam ? "-bluecap-" : "-redcap-" : "-burn-" === Bt ? Bt = 1 == game.myTeam ? "-redfire-" : "-bluefire-" : "-take-" == Bt && (Bt = 1 == game.myTeam ? "-tred-" : "-tblue-"), Bt
+    }
+
     function getFilters(Bt) {
         return config.adjustmentFilter ? [config.adjustmentFilter, ...Bt] : Bt
+    }
+
+    function replaceChatEmotes(Bt) {
+        let Xt = SWAM.getEmotesList(),
+            Gt = Bt.match(/-[A-Za-z0-9]*-/g);
+        if (null != Gt) {
+            let Yt = "";
+            for (let Ht of Gt)
+                if (!(3 > Ht.length) && (Yt = Ht.substr(1, Ht.length - 2).toLowerCase(), Xt.includes(Yt))) {
+                    let zt = `<span class="emote-${Yt} chatboxEmote"></span>`;
+                    Bt = Bt.replace(Ht, zt)
+                }
+        }
+        return Bt
     }
 
     function AddMusic() {
@@ -23971,7 +23953,7 @@ function SWAM() {
             Qt = 0,
             Jt = 0;
         game.gameType !== SWAM.GAME_TYPE.CTF || (Kt = $("<div id='matchTime'></div>"), $("body").append(Kt), SWAM.one("gameWipe", () => {
-            clearInterval(Qt), SWAM.off("scoreboardUpdate", Bt), SWAM.off("chatLineAdded", jt), SWAM.off("CTF_MatchStarted", Xt), SWAM.off("chatLineAdded", jt), Kt.remove()
+            clearInterval(Qt), SWAM.off("scoreboardUpdate", Bt), SWAM.off("CTF_MatchStarted", Xt), SWAM.off("chatLineAdded", jt), Kt.remove()
         }), SWAM.one("scoreboardUpdate", Bt), SWAM.on("CTF_MatchStarted", Xt))
     }
 
@@ -24012,7 +23994,7 @@ function SWAM() {
     game.fixedjitter = INITIAL_JITTER;
     const cruise64green = "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzNTkuMjEgMzU5LjIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KPG1ldGFkYXRhPgo8cmRmOlJERj4KPGNjOldvcmsgcmRmOmFib3V0PSIiPgo8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KPGRjOnR5cGUgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIvPgo8ZGM6dGl0bGUvPgo8L2NjOldvcms+CjwvcmRmOlJERj4KPC9tZXRhZGF0YT4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxMC4wMSAtMzQzLjEzKSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuMTE2IC0yLjg1ODgpIiBmaWxsPSIjYzlmZjAwIj4KPHBhdGggZD0ibTM3Ny41IDQzNy4zOGMtNzMuMTc4IDAtMTMyLjUgNTkuMzIyLTEzMi41IDEzMi41IDAgNDAuODM3IDE4LjQ4NCA3Ny4zNTEgNDcuNTMxIDEwMS42NiA4Ljg3NjUtOC44OTQ0IDE3Ljc1MS0xNy43OTEgMjYuNjI1LTI2LjY4OCAxLjk1MjYtMS45NTI2IDAuMzczOTktNi43MTk4LTMuNTMxMi0xMC42MjUtMy45MDUyLTMuOTA1Mi04LjY0MTEtNS40ODM5LTEwLjU5NC0zLjUzMTJsLTEyLjY4OCAxMi42ODhjLTE0LjQ2Ny0xNi43NDgtMjQuMDg4LTM3LjgxNy0yNi42NTYtNjFoMTkuMzEyYzIuNzYxNCAwIDUtNC40NzcyIDUtMTBzLTIuMjM4Ni0xMC01LTEwaC0xOS43NWMxLjU3NTItMjMuOTE0IDEwLjYwNi00NS43OTMgMjQuODEyLTYzLjMxMmwxNC45NjkgMTQuOTY5YzEuOTUyNiAxLjk1MjYgNi42ODg1IDAuMzczOTkgMTAuNTk0LTMuNTMxMiAzLjkwNTItMy45MDUyIDUuNDgzOS04LjY3MjQgMy41MzEyLTEwLjYyNWwtMTUuMTU2LTE1LjE1NmMxNy4zNDgtMTQuOTg1IDM5LjMzMS0yNC43NzMgNjMuNS0yNi45MDZ2MjIuMDYyYzAgMi43NjE0IDQuNDc3MiA1IDEwIDVzMTAtMi4yMzg2IDEwLTV2LTIyLjA2MmMyNC4xOCAyLjEzMDQgNDYuMTQ3IDExLjkxMSA2My41IDI2LjkwNmwtMTUuMTU2IDE1LjE1NmMtMS45NTI2IDEuOTUyNi0wLjM3Mzk5IDYuNzE5OCAzLjUzMTIgMTAuNjI1IDMuOTA1MiAzLjkwNTIgOC42NDExIDUuNDgzOSAxMC41OTQgMy41MzEybDE0Ljk2OS0xNC45NjljMTQuMjAzIDE3LjUyMSAyMy4yNDIgMzkuMzk2IDI0LjgxMiA2My4zMTJoLTE5Ljc1Yy0yLjc2MTQgMC01IDQuNDc3Mi01IDEwczIuMjM4NiAxMCA1IDEwaDE5LjI4MWMtMi41NjMxIDIzLjE4Ni0xMi4xNjUgNDQuMjUtMjYuNjI1IDYxbC0xMi42ODgtMTIuNjg4Yy0xLjk1MjYtMS45NTI2LTYuNjg4NS0wLjM3Mzk5LTEwLjU5NCAzLjUzMTItMy45MDUyIDMuOTA1Mi01LjQ4MzkgOC42NzI0LTMuNTMxMiAxMC42MjUgOC44NzI5IDguOTA4NCAxNy43NjYgMTcuNzk3IDI2LjY1NiAyNi42ODggMjkuMDM3LTI0LjMwNiA0Ny41LTYwLjgyOCA0Ny41LTEwMS42NiAwLTczLjE3OC01OS4zMjItMTMyLjUtMTMyLjUtMTMyLjV6Ii8+CjxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDEuMTY2NyAwIDAgMS4xNjY3IC02MCAtOTUuMzk0KSIgZD0ibTM5MCA1NzIuMzZjMCA4LjI4NDMtNi43MTU3IDE1LTE1IDE1cy0xNS02LjcxNTctMTUtMTUgNi43MTU3LTE1IDE1LTE1IDE1IDYuNzE1NyAxNSAxNXoiLz4KPHBhdGggZD0ibTM0NS43MyA0OTMuNTNjLTQuNjA2OCAyLjA2NjQtNy40ODQ5IDUuNDk4MS02LjU0NjUgNy45MTA4bDIzLjc4NyA2MS4xNjJjLTMuMDc1MiA0LjU4OTYtMy45MzM5IDEwLjU3Ni0xLjc3OTUgMTYuMTE2IDMuNTAzMiA5LjAwNzcgMTMuNjQ1IDEzLjQ3IDIyLjY1MyA5Ljk2NjhzMTMuNDctMTMuNjQ1IDkuOTY2OC0yMi42NTNjLTIuMTU0NC01LjUzOTUtNi44MzI0LTkuMzczLTEyLjItMTAuNjc5bC0yMy43ODctNjEuMTYyYy0xLjAwMDktMi41NzM2LTUuOTg1LTMuMDM3Mi0xMS4xMzItMS4wMzUzLTAuMzIxNyAwLjEyNTExLTAuNjU0MDEgMC4yMzYtMC45NjExMiAwLjM3Mzc5eiIvPgo8cGF0aCBkPSJtMzAzLjUyIDM4Ni44MiAxOC42NzYtNy4xNTU2IDguOTQ0NSAyMy4zNDUgMTQuMDA3LTUuMzY2Ny0yMC4xNjEgNDUuMjA2LTQ1LjIwNi0yMC4xNjEgMTQuMDA3LTUuMzY2Ny04Ljk0NDUtMjMuMzQ1eiIvPgo8L2c+CjwvZz4KPC9zdmc+Cg==",
         cruiseOFFDataURL = "url('data:image/svg+xml;base64," + Base64.encode(Base64.decode(cruise64green).replace(/\#c9ff00/g, "#555555")) + "')";
-    eval(Base64.decode("d2luZG93Lkdsb3cgPSBmdW5jdGlvbihwbGF5ZXIpDQp7DQogICAgaWYgKFBJWEkuZmlsdGVycy5HbG93RmlsdGVyICYmIHBsYXllci5uYW1lID09ICJCb21iaXRhIikgew0KICAgICAgICB2YXIgY29sb3IgPSAocGxheWVyLmdyYXBoaWNzU2V0ID09IDApID8gMHhFMEUwRkYgOiAweEZGRkZGRjsNCiAgICAgICAgcGxheWVyLnNwcml0ZXMuc3ByaXRlLmZpbHRlcnMgPSBbDQogICAgICAgICAgICBuZXcgUElYSS5maWx0ZXJzLkdsb3dGaWx0ZXIoMTAsIDEsIDAsIGNvbG9yLCAwLjIpDQogICAgICAgIF07DQogICAgfQ0KfTs=")), $("#logosmall").attr("href", window.location.href), $("#logon .logo .version").html(`AirMash ${game.version}<span style="margin: 0 20px;"></span>StarMash ${SWAM.version}`), $("body").append($("<div id='btnFreeSpectator'>Free Camera</div>").click(function () {
+    eval(Base64.decode("d2luZG93Lkdsb3cgPSBmdW5jdGlvbihwbGF5ZXIpDQp7DQogICAgaWYgKFBJWEkuZmlsdGVycy5HbG93RmlsdGVyICYmIHBsYXllci5uYW1lID09ICJCb21iaXRhIikgew0KICAgICAgICB2YXIgY29sb3IgPSAocGxheWVyLmdyYXBoaWNzU2V0ID09IDApID8gMHhFMEUwRkYgOiAweEZGRkZGRjsNCiAgICAgICAgcGxheWVyLnNwcml0ZXMuc3ByaXRlLmZpbHRlcnMgPSBbDQogICAgICAgICAgICBuZXcgUElYSS5maWx0ZXJzLkdsb3dGaWx0ZXIoMTAsIDEsIDAsIGNvbG9yLCAwLjIpDQogICAgICAgIF07DQogICAgfQ0KfTs=")), $("#logosmall").attr("href", window.location.href), $("#logon .logo .version").html(`AirMash ${game.version}<span style="margin: 0 20px;"></span>StarMash ${SWAM.version}`), $("body").append(`<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">`), $("body").append($("<div id='btnFreeSpectator'>Free Camera</div>").click(function () {
             SWAM.setTargetedPlayer(game.myID)
         })), $("#settings").prepend($("<div class='leaderBoardIcon'></div>").click(function () {
             SWAM.toggleLeaderboard()
@@ -24077,6 +24059,7 @@ function SWAM() {
                 general: {
                     powerupsFX: !0,
                     killStreaksFX: !0,
+                    matchEndFX: !0,
                     zoomFreeSpectator: !0,
                     scalingFactor: 2500,
                     useProwlerRadar: !0
@@ -24124,7 +24107,7 @@ function SWAM() {
             let Gt = [];
             var Yt = getModSettings();
             let Ht = createModal({
-                title: "StarMash Mod Settings",
+                title: "StarMash Settings",
                 content: getTemplate(".SWAM_Settings"),
                 width: "800px",
                 closeOnEsc: !1
@@ -24226,7 +24209,9 @@ function SWAM() {
     Players.add = function (Bt, Xt) {
         Players_add.call(Players, Bt, Xt);
         let Gt = Players.get(Bt.id);
-        Gt.scorePlace = 0, Gt.totalKills = 0, Gt.killCount = 0, Gt.deathCount = 0, Gt.captures = 0, Gt.lastMessageTime = 0, Gt.sprites.bubble && (Gt.sprites.bubble.alpha = Gt.sprites.bubbleCenter.alpha = Gt.sprites.bubbleLeft.alpha = Gt.sprites.bubblePoint.alpha = Gt.sprites.bubbleRight.alpha = 0.4, Gt.sprites.bubbleText.alpha = 0.85);
+        Gt.scorePlace = 0, Gt.totalKills = 0, Gt.killCount = 0, Gt.deathCount = 0, Gt.captures = 0, Gt.lastMessageTime = 0, Gt.spamBlock = !0, setTimeout(() => {
+            delete Gt.spamBlock
+        }, 1388), Gt.sprites.bubble && (Gt.sprites.bubble.alpha = Gt.sprites.bubbleCenter.alpha = Gt.sprites.bubbleLeft.alpha = Gt.sprites.bubblePoint.alpha = Gt.sprites.bubbleRight.alpha = 0.4, Gt.sprites.bubbleText.alpha = 0.85);
         game.state !== Network.STATE.PLAYING || (Gt.name = Gt.name.replace(nonprintRegex, "\uFFFD"), SWAM.GameLog.logPlayerConnection(Gt, !0), SWAM.trigger("playerAdded", Gt))
     };
     let Players_destroy = Players.destroy;
@@ -24289,15 +24274,15 @@ function SWAM() {
     };
     let Network_sendMethods = [Network.sendChat, Network.sendTeam, Network.sendWhisper, Network.sendSay];
     Network.sendChat = function (Bt) {
-        splitAndSend(Bt, Network_sendMethods[0])
+        Bt = replaceSpecialWordsInChat(Bt), splitAndSend(Bt, Network_sendMethods[0])
     }, Network.sendTeam = function (Bt) {
-        splitAndSend(Bt, Network_sendMethods[1])
+        Bt = replaceSpecialWordsInChat(Bt), splitAndSend(Bt, Network_sendMethods[1])
     }, Network.sendWhisper = function (Bt, Xt) {
-        splitAndSend(Xt, function (Gt) {
+        Xt = replaceSpecialWordsInChat(Xt), splitAndSend(Xt, function (Gt) {
             Network_sendMethods[2].call(Network, Bt, Gt)
         })
     }, Network.sendSay = function (Bt) {
-        splitAndSend(Bt, Network_sendMethods[3], 30, 3e3)
+        Bt = replaceSpecialWordsInChat(Bt), Bt = replaceTeamEmotes(Bt), splitAndSend(Bt, Network_sendMethods[3], 30, 3e3)
     };
     let Network_force = Network.force;
     Network.force = function (Bt) {
@@ -24310,11 +24295,14 @@ function SWAM() {
         return Xt
     }, UI.isEmote = function (Bt, Xt) {
         let Gt = SWAM.getEmotesList();
+        if ("x" == Bt) return !1;
         for (var Yt = 0; Yt < Gt.length; Yt++)
             if (Xt) {
                 if (Bt === ":" + Gt[Yt] + ":" || Bt === "-" + Gt[Yt] + "-") return Gt[Yt];
             } else if (Bt === Gt[Yt]) return Gt[Yt];
         return !1
+    }, UI.isTeamEmote = function (Bt) {
+        return ["cap", "burn", "take"].includes(Bt)
     };
     let UI_parseCommand = UI.parseCommand;
     UI.parseCommand = function (Bt) {
@@ -24322,13 +24310,13 @@ function SWAM() {
         var Xt = Bt.split(" "),
             Gt = Xt[0].substr(1).toLowerCase();
         if (0 == Gt.length) return !1;
-        if ("emotes" === Gt) {
-            let Yt = "Emotes available:";
-            return SWAM.getEmotesList().forEach(Ht => {
-                Yt += `&nbsp;&nbsp;  /${Ht}`
-            }), UI.addChatMessage(Yt, !0), !0
-        }
-        return UI.isEmote(Gt) ? (Network.sendSay("-" + Gt + "-"), !0) : UI_parseCommand(Bt)
+        let Yt = Bt.indexOf(" ");
+        if ("name" === Gt) - 1 == Yt ? UI.addChatMessage("Usage: /name your_name") : Network.reconnectAs(Bt.substr(Yt + 1));
+        else if ("reconnect" === Gt) Network.reconnect();
+        else if ("emotes" === Gt) emotesPanel.show();
+        else if (UI.isTeamEmote(Gt) || UI.isEmote(Gt)) Network.sendSay("-" + Gt + "-");
+        else return UI_parseCommand(Bt);
+        return !0
     };
     let UI_aircraftSelected = UI.aircraftSelected;
     UI.aircraftSelected = function (Bt) {
@@ -24420,7 +24408,7 @@ function SWAM() {
                     Vt = 0,
                     qt = Players.getMe().team,
                     Kt = Yt ? 1 : 2;
-                "taken" === Wt ? Vt = qt == Kt ? SWAM.Audio.Flag.OursTaken : SWAM.Audio.Flag.EnemyTaken : "captured" === Wt ? (SWAM.GameLog.logFlag(Bt.text), Vt = qt == Kt ? SWAM.Audio.Flag.OursCaptured : SWAM.Audio.Flag.EnemyCaptured) : "returned" === Wt ? Vt = qt == Kt ? SWAM.Audio.Flag.OursRecovered : SWAM.Audio.Flag.EnemyRecovered : void 0, SWAM.Settings && SWAM.Settings.audio && SWAM.Settings.audio.voiceEventsCTF && SWAM.Audio.playFlagEvent(Vt, qt), SWAM.trigger("CTF_FlagEvent", [Vt, Kt, Wt, zt])
+                "taken" === Wt ? Vt = qt == Kt ? SWAM.Audio.Flag.OursTaken : SWAM.Audio.Flag.EnemyTaken : "captured" === Wt ? (SWAM.GameLog.logFlag(Bt.text), Vt = qt == Kt ? SWAM.Audio.Flag.OursCaptured : SWAM.Audio.Flag.EnemyCaptured) : "returned" === Wt ? (SWAM.GameLog.logFlag(Bt.text), Vt = qt == Kt ? SWAM.Audio.Flag.OursRecovered : SWAM.Audio.Flag.EnemyRecovered) : void 0, SWAM.Settings && SWAM.Settings.audio && SWAM.Settings.audio.voiceEventsCTF && SWAM.Audio.playFlagEvent(Vt, qt), SWAM.trigger("CTF_FlagEvent", [Vt, Kt, Wt, zt])
             }
         }
     };
@@ -24431,7 +24419,7 @@ function SWAM() {
     let UI_addChatLine = UI.addChatLine;
     UI.addChatLine = function (Bt, Xt, Gt) {
         let Yt = ["-SWAM-PONG"];
-        Bt.lastMessageTime = new Date().getTime();
+        if (Bt.lastMessageTime = new Date().getTime(), 2 == Gt && Bt.spamBlock && "STATSBOT" != Bt.name) return void console.log("SPAM BLOCKED: ", Xt);
         let jt = -1 < $.inArray(Xt.toUpperCase(), ["-SWAM-PING"]);
         for (var Wt of Yt) jt = jt || Xt.startsWith(Wt);
         if (!jt) {
@@ -24439,8 +24427,8 @@ function SWAM() {
             if (null != zt) {
                 let qt = Xt.split(getURLRegEx());
                 Xt = "";
-                for (let Kt = 0; Kt < qt.length; Kt++) Xt += UI.escapeHTML(qt[Kt]), Kt < zt.length && (Xt += "<a href='" + zt[Kt] + "' target='_blank' style='text-decoration: underline;'>" + zt[Kt] + "</a>")
-            } else Xt = UI.escapeHTML(Xt);
+                for (let Kt = 0; Kt < qt.length; Kt++) Xt += replaceChatEmotes(UI.escapeHTML(qt[Kt])), Kt < zt.length && (Xt += "<a href='" + zt[Kt] + "' target='_blank' style='text-decoration: underline;'>" + zt[Kt] + "</a>")
+            } else Xt = replaceChatEmotes(UI.escapeHTML(Xt));
             UI_addChatLine.call(UI, Bt, Xt, Gt, !1);
             let Vt = UI.getIgnored();
             Vt[Bt.id] || SWAM.trigger("chatLineAdded", [Bt, Xt, Gt])
@@ -24463,7 +24451,7 @@ function SWAM() {
     };
     let UI_updateScore = UI.updateScore;
     UI.updateScore = function (Bt) {
-        UI_updateScore.call(UI, Bt), updatePlayerCounters(Bt.scores), SWAM.trigger("detailedScoreUpdate", Bt)
+        UI_updateScore.call(UI, Bt), $("#scorecontainer div").click(SWAM.scoreboard_click_handler), updatePlayerCounters(Bt.scores), SWAM.trigger("detailedScoreUpdate", Bt)
     };
     let UI_scoreboardUpdate = UI.scoreboardUpdate;
     UI.scoreboardUpdate = function (Bt, Xt, Gt) {
@@ -24490,9 +24478,12 @@ function SWAM() {
         games_showBTRWin.call(Games, Bt), SWAM.trigger("BTR_MatchEnded", Bt)
     };
     let games_showCTFWin = Games.showCTFWin;
-    Games.showCTFWin = function (Bt) {
-        games_showCTFWin.call(Games, Bt), SWAM.trigger("CTF_MatchEnded", Bt), setTimeout(function () {
-            SWAM.GameLog.logNewMatch(), SWAM.trigger("CTF_MatchStarted"), SWAM.RandomizeBackground && SWAM.RandomizeBackground()
+    Games.showCTFWin = function (Bt, Xt) {
+        Bt.t = Xt || 5, games_showCTFWin.call(Games, Bt), $("#custom-msg").last().addClass("customCTFWin").css({
+            "background-image": `url("${getFilePath(game.myTeam==Bt.w?"ctfvictory.png":"ctfdefeat.png")}")`,
+            "font-family": "'Alfa Slab One', cursive"
+        }), SWAM.trigger("CTF_MatchEnded", Bt), setTimeout(function () {
+            SWAM.GameLog.logNewMatch(), SWAM.RandomizeBackground && SWAM.RandomizeBackground(), SWAM.trigger("CTF_MatchStarted")
         }, 6e4)
     };
     let graphics_resizeRenderer = Graphics.resizeRenderer;
@@ -24500,6 +24491,8 @@ function SWAM() {
         SWAM.Settings.ui.useSquaredScene ? (Bt = Bt > 1.15 * Xt ? 1.15 * Xt : Bt, graphics_resizeRenderer.call(Graphics, Bt, Xt), $("canvas").css({
             "margin-left": 0.5 * (window.innerWidth - $("canvas").width()) + "px"
         })) : (graphics_resizeRenderer.call(Graphics, Bt, Xt), $("canvas").css("margin-left", "")), SWAM.resizeLayers(Bt, Xt), SWAM.trigger("rendererResized", [Bt, Xt])
+    }, Network.reconnectAs = function (Bt) {
+        game.myOriginalName = Bt, Network.reconnect()
     }, SWAM.updateLayers = function () {}, SWAM.resizeLayers = function () {}, SWAM.addDebugElements = function () {
         if (SWAM.debug) {
             $("#logon").append("<div><input class='dgCamUpdates' type='button' value='updates' style='width: 50px; margin-right: 10px;'></div><table><tr><td colspan='3' align='center'><input class='dgCamY' type='button' value='-8192' style='width: 50px; margin-right: 10px;'></td></tr><tr><td><input class='dgCamX' type='button' value='-16384' style='width: 50px; margin-right: 10px;'></td><td><input class='dgCamX' type='button' value='0' style='width: 50px; margin-right: 10px;'><input class='dgCamY' type='button' value='0'    style='width: 50px; margin-right: 10px;'></td><td><input class='dgCamX' type='button' value='16384' style='width: 50px; margin-right: 10px;'></td></tr><tr><td colspan='3' align='center'><input class='dgCamY' type='button' value='8192' style='width: 50px; margin-right: 10px;'></td></tr></table>"), $("#logon input.dgCamX").click(function (Xt) {
@@ -24678,7 +24671,7 @@ function SWAM() {
         },
         handle_keys: function (Bt) {
             var Xt = $.inArray(Bt.which, [90, 88, 67]);
-            if (-1 < Xt && (SWAM.radio.visible() && Xt == SWAM.radio.currentChannel ? SWAM.radio.hide() : SWAM.radio.show(Xt)), 48 <= Bt.which && 57 >= Bt.which && SWAM.radio.visible()) {
+            if (-1 < Xt && (SWAM.radio.visible() && Xt == SWAM.radio.currentChannel ? SWAM.radio.hide() : SWAM.radio.show(Xt)), 27 == Bt.which && SWAM.radio.visible() && SWAM.radio.hide(), 48 <= Bt.which && 57 >= Bt.which && SWAM.radio.visible()) {
                 SWAM.radio.hide();
                 let Ht = "";
                 Xt = Bt.which - 49, -1 == Xt && (Xt = 9);
@@ -24766,235 +24759,447 @@ function SWAM() {
             })
         };
     SWAM.chatinputVisible = function () {
-            return "none" !== $("#chatinput").css("display")
-        }, SWAM.getClosestPlayer = function (Bt, Xt) {
-            let Gt = screenToMap(Bt, Xt);
-            Bt = Gt.x, Xt = Gt.y;
-            let Yt = 1e5,
-                Ht = Players.getIDs(),
-                jt = null;
-            for (let Wt in Ht) {
-                let zt = Players.get(Wt),
-                    Vt = Tools.distance(Bt, Xt, zt.pos.x, zt.pos.y);
-                Vt < Yt && (jt = zt, Yt = Vt)
-            }
-            return SWAM.debug && console.log(jt.name), jt
-        }, ! function () {
-            const Xt = {
-                    BLUE: 1,
-                    RED: 2
+        return "none" !== $("#chatinput").css("display")
+    }, SWAM.getClosestPlayer = function (Bt, Xt) {
+        let Gt = screenToMap(Bt, Xt);
+        Bt = Gt.x, Xt = Gt.y;
+        let Yt = 1e5,
+            Ht = Players.getIDs(),
+            jt = null;
+        for (let Wt in Ht) {
+            let zt = Players.get(Wt),
+                Vt = Tools.distance(Bt, Xt, zt.pos.x, zt.pos.y);
+            Vt < Yt && (jt = zt, Yt = Vt)
+        }
+        return SWAM.debug && console.log(jt.name), jt
+    }, ! function () {
+        const Xt = {
+                BLUE: 1,
+                RED: 2
+            },
+            Gt = {
+                position: {
+                    x: 0,
+                    y: 0
                 },
-                Gt = {
-                    position: {
-                        x: 0,
-                        y: 0
-                    },
-                    BASE_COORDINATES: {
-                        x: -9670,
-                        y: -1470
-                    },
-                    isCarried: !1,
-                    player: null
+                BASE_COORDINATES: {
+                    x: -9670,
+                    y: -1470
                 },
-                Yt = {
-                    position: {
-                        x: 0,
-                        y: 0
-                    },
-                    BASE_COORDINATES: {
-                        x: 8600,
-                        y: -940
-                    },
-                    isCarried: !1,
-                    player: null
-                };
-            let Ht = Kt => Kt.render ? Kt.pos : Kt.lowResPos;
-            SWAM.on("CTF_Flag", Kt => {
-                let Zt = 1 == Kt.flag ? Gt : Yt;
-                if (1 == Kt.type) Zt.isCarried = !1, Zt.player = null, Zt.position.x = Kt.posX, Zt.position.y = Kt.posY;
-                else {
-                    Zt.isCarried = !0, Zt.player = Players.get(Kt.id);
-                    let Qt = Ht(Zt.player);
-                    Zt.position.x = Qt.x, Zt.position.y = Qt.y
-                }
-            });
-            class Wt {
-                constructor(Kt) {
-                    this.flag = Kt == Xt.BLUE ? Gt : Yt
-                }
-                getPosition() {
-                    return this.flag.isCarried ? Ht(this.flag.player) : this.flag.position
-                }
-                isActive() {
-                    return game.gameType == SWAM.GAME_TYPE.CTF
-                }
-                isVisible() {
-                    return (this.flag.BASE_COORDINATES.x != this.flag.position.x || this.flag.BASE_COORDINATES.y != this.flag.position.y) && (null == this.flag.player || this.flag.player.id != game.myID)
-                }
-            }
-            class zt {
-                constructor(Kt, Zt = 16777215) {
-                    this.setTracker(Kt), this.color = Zt, this.arrow = new Textures.sprite("prowler"), this.arrow.texture = PIXI.Texture.fromImage(getFilePath("arrow_indicator.png")), this.arrow.tint = this.color, this.arrow.alpha = 0.7, this.arrow.position.set(0, 0), this.arrow.scale.set(.2, .2), this.arrow.anchor.set(.5, .5), this.arrow.pivot.set(.5, .5), this.frameCounter = 0, this.framesToSkip = 3, this.ticker = new PIXI.ticker.Ticker, this.ticker.stop(), this.ticker.add(this.update.bind(this)), SWAM.on("gamePrep", function () {
-                        this.tracker.isActive() && this.addToScene()
-                    }.bind(this)), SWAM.on("gameWipe", function () {
-                        this.tracker.isActive() && this.removeFromScene()
-                    }.bind(this))
-                }
-                setTracker(Kt) {
-                    this.tracker = "function" == typeof Kt ? {
-                        getPosition: Kt
-                    } : Kt
-                }
-                addToScene() {
-                    game.graphics.layers.game.addChild(this.arrow), this.ticker.start()
-                }
-                removeFromScene() {
-                    this.ticker.stop(), game.graphics.layers.game.removeChild(this.arrow)
-                }
-                update() {
-                    if (!this.tracker.isVisible()) return void(this.arrow.visible = !1);
-                    let Zt = this.tracker.getPosition(),
-                        Qt = MapToScreen(Zt.x, Zt.y);
-                    if (0 < Qt.x && Qt.x < game.screenX && 0 < Qt.y && Qt.y < game.screenY) return void(this.arrow.visible = !1);
-                    this.arrow.visible = !0, Qt.x -= game.halfScreenX, Qt.y -= game.halfScreenY;
-                    let Jt = Math.atan2(Qt.x, -Qt.y),
-                        $t = Qt.y / Qt.x,
-                        en = null,
-                        tn = 30,
-                        nn = 100 + tn,
-                        an = {
-                            halfwidth: (game.screenX - nn) / 2,
-                            halfheight: (game.screenY - nn) / 2
-                        };
-                    en = 0 > Qt.y ? {
-                        x: -an.halfwidth / $t,
-                        y: -an.halfheight
-                    } : {
-                        x: an.halfwidth / $t,
-                        y: an.halfheight
-                    }, en.x < -an.halfwidth ? en = {
-                        x: -an.halfwidth,
-                        y: $t * -an.halfheight
-                    } : en.x > an.halfwidth && (en = {
-                        x: an.halfwidth,
-                        y: $t * an.halfheight
-                    }), en = {
-                        x: en.x + game.halfScreenX,
-                        y: en.y + game.halfScreenY
-                    }, this.arrow.position.set(en.x + tn, en.y), this.arrow.rotation = Jt
-                }
-            }
-            SWAM.ArrowIndicator = zt, SWAM.PlayerTracker = class {
-                constructor(Kt) {
-                    this.player = Players.get(Kt)
-                }
-                getPosition() {
-                    return Ht(this.player)
-                }
-                isActive() {
-                    return !0
-                }
-                isVisible() {
-                    return this.player.id != game.myID
-                }
+                isCarried: !1,
+                player: null
+            },
+            Yt = {
+                position: {
+                    x: 0,
+                    y: 0
+                },
+                BASE_COORDINATES: {
+                    x: 8600,
+                    y: -940
+                },
+                isCarried: !1,
+                player: null
             };
-            let Vt = new Wt(Xt.BLUE),
-                qt = new Wt(Xt.RED);
-            SWAM.ArrowIndicator.BLUE = new zt(Vt, 255), SWAM.ArrowIndicator.RED = new zt(qt, 16711680)
-        }(), SWAM.SmallLog = new function () {
-            let Xt = null;
-            SWAM.on("gamePrep", () => {
-                Xt = $(getTemplate("#WhoKilledWho")).click(() => {
-                    SWAM.GameLog.show()
-                }), $("body").append(Xt)
-            }), SWAM.on("gameWipe", () => {
-                Xt && (Xt.remove(), Xt = null)
-            }), this.add = function (Gt) {
-                if (game.state === Network.STATE.PLAYING && 0 != Xt.length) {
-                    let Yt = $(Gt);
-                    Xt.append(Yt);
-                    let Ht = Xt[0];
-                    Ht.scrollTop = Ht.scrollHeight, setTimeout(function () {
-                        Yt.remove()
-                    }, 3e4)
+        let Ht = Kt => Kt.render ? Kt.pos : Kt.lowResPos;
+        SWAM.on("CTF_Flag", Kt => {
+            let Zt = 1 == Kt.flag ? Gt : Yt;
+            if (1 == Kt.type) Zt.isCarried = !1, Zt.player = null, Zt.position.x = Kt.posX, Zt.position.y = Kt.posY;
+            else {
+                Zt.isCarried = !0, Zt.player = Players.get(Kt.id);
+                let Qt = Ht(Zt.player);
+                Zt.position.x = Qt.x, Zt.position.y = Qt.y
+            }
+        });
+        class Wt {
+            constructor(Kt) {
+                this.flag = Kt == Xt.BLUE ? Gt : Yt
+            }
+            getPosition() {
+                return this.flag.isCarried ? Ht(this.flag.player) : this.flag.position
+            }
+            isActive() {
+                return game.gameType == SWAM.GAME_TYPE.CTF
+            }
+            isVisible() {
+                return (this.flag.BASE_COORDINATES.x != this.flag.position.x || this.flag.BASE_COORDINATES.y != this.flag.position.y) && (null == this.flag.player || this.flag.player.id != game.myID)
+            }
+        }
+        class zt {
+            constructor(Kt, Zt = 16777215) {
+                this.setTracker(Kt), this.color = Zt, this.arrow = new Textures.sprite("prowler"), this.arrow.texture = PIXI.Texture.fromImage(getFilePath("arrow_indicator.png")), this.arrow.tint = this.color, this.arrow.alpha = 0.7, this.arrow.position.set(0, 0), this.arrow.scale.set(.2, .2), this.arrow.anchor.set(.5, .5), this.arrow.pivot.set(.5, .5), this.frameCounter = 0, this.framesToSkip = 3, this.ticker = new PIXI.ticker.Ticker, this.ticker.stop(), this.ticker.add(this.update.bind(this)), SWAM.on("gamePrep", function () {
+                    this.tracker.isActive() && this.addToScene()
+                }.bind(this)), SWAM.on("gameWipe", function () {
+                    this.tracker.isActive() && this.removeFromScene()
+                }.bind(this))
+            }
+            setTracker(Kt) {
+                this.tracker = "function" == typeof Kt ? {
+                    getPosition: Kt
+                } : Kt
+            }
+            addToScene() {
+                game.graphics.layers.game.addChild(this.arrow), this.ticker.start()
+            }
+            removeFromScene() {
+                this.ticker.stop(), game.graphics.layers.game.removeChild(this.arrow)
+            }
+            update() {
+                if (!this.tracker.isVisible()) return void(this.arrow.visible = !1);
+                let Zt = this.tracker.getPosition(),
+                    Qt = MapToScreen(Zt.x, Zt.y);
+                if (0 < Qt.x && Qt.x < game.screenX && 0 < Qt.y && Qt.y < game.screenY) return void(this.arrow.visible = !1);
+                this.arrow.visible = !0, Qt.x -= game.halfScreenX, Qt.y -= game.halfScreenY;
+                let Jt = Math.atan2(Qt.x, -Qt.y),
+                    $t = Qt.y / Qt.x,
+                    en = null,
+                    tn = 30,
+                    nn = 100 + tn,
+                    an = {
+                        halfwidth: (game.screenX - nn) / 2,
+                        halfheight: (game.screenY - nn) / 2
+                    };
+                en = 0 > Qt.y ? {
+                    x: -an.halfwidth / $t,
+                    y: -an.halfheight
+                } : {
+                    x: an.halfwidth / $t,
+                    y: an.halfheight
+                }, en.x < -an.halfwidth ? en = {
+                    x: -an.halfwidth,
+                    y: $t * -an.halfheight
+                } : en.x > an.halfwidth && (en = {
+                    x: an.halfwidth,
+                    y: $t * an.halfheight
+                }), en = {
+                    x: en.x + game.halfScreenX,
+                    y: en.y + game.halfScreenY
+                }, this.arrow.position.set(en.x + tn, en.y), this.arrow.rotation = Jt
+            }
+        }
+        SWAM.ArrowIndicator = zt, SWAM.PlayerTracker = class {
+            constructor(Kt) {
+                this.player = Players.get(Kt)
+            }
+            getPosition() {
+                return Ht(this.player)
+            }
+            isActive() {
+                return !0
+            }
+            isVisible() {
+                return this.player.id != game.myID
+            }
+        };
+        let Vt = new Wt(Xt.BLUE),
+            qt = new Wt(Xt.RED);
+        SWAM.ArrowIndicator.BLUE = new zt(Vt, 255), SWAM.ArrowIndicator.RED = new zt(qt, 16711680)
+    }(), SWAM.SmallLog = new function () {
+        let Xt = null;
+        SWAM.on("gamePrep", () => {
+            Xt = $(getTemplate("#WhoKilledWho")).click(() => {
+                SWAM.GameLog.show()
+            }), $("body").append(Xt)
+        }), SWAM.on("gameWipe", () => {
+            Xt && (Xt.remove(), Xt = null)
+        }), this.add = function (Gt) {
+            if (game.state === Network.STATE.PLAYING && 0 != Xt.length) {
+                let Yt = $(Gt);
+                Xt.append(Yt);
+                let Ht = Xt[0];
+                Ht.scrollTop = Ht.scrollHeight, setTimeout(function () {
+                    Yt.remove()
+                }, 3e4)
+            }
+        }
+    }, SWAM.GameLog = new function () {
+        let Gt = !0,
+            Yt = !1,
+            Ht = null,
+            jt = null;
+        this.visible = () => "none" !== Ht.css("display"), this.add = function (Wt) {
+                if (game.state === Network.STATE.PLAYING) {
+                    let zt = $(Wt);
+                    zt.hasClass("flwkw") && !Gt && zt.hide(), zt.hasClass("flplayer") && !Yt && zt.hide();
+                    let Vt = jt[0],
+                        qt = isScrolledToBottom(Vt);
+                    jt.append(zt), 1e3 < jt.children().length && jt.children().first().remove(), qt && (Vt.scrollTop = Vt.scrollHeight)
+                }
+            }, this.logKill = function (Wt, zt) {
+                if (null != Wt && null != zt) {
+                    let qt = "<div class=\"flwkw line\"><span class=\"playersel\" data-playerid=\"" + Wt.id + "\"><span class=\"flag small flag-" + Wt.flag + "\"></span><span class=\"nick\" style=\"color:" + (1 == Wt.team ? "#4d7fd5" : 2 == Wt.team ? "#dc4f46" : "") + ";\">" + UI.escapeHTML(Wt.name) + "</span></span><span class=\"text\" style=\"margin-left: 10px; margin-right: 10px; opacity: 0.6;\"> killed </span><span class=\"playersel\" data-playerid=\"" + zt.id + "\"><span class=\"flag small flag-" + zt.flag + "\"></span><span class=\"nick\" style=\"color:" + (1 == zt.team ? "#4d7fd5" : 2 == zt.team ? "#dc4f46" : "") + ";\">" + UI.escapeHTML(zt.name) + "</span></span></div>";
+                    this.add(qt), SWAM.Settings.ui.showWhoKilledWho && SWAM.SmallLog.add(qt)
+                }
+            }, this.logPlayerConnection = function (Wt, zt) {
+                if (null != Wt) {
+                    let qt = "<div class=\"flplayer line\"><span class=\"playersel\" data-playerid=\"" + Wt.id + "\"><span class=\"flag small flag-" + Wt.flag + "\"></span><span class=\"nick\" style=\"color:" + (1 == Wt.team ? "#4d7fd5" : 2 == Wt.team ? "#dc4f46" : "") + ";\">" + UI.escapeHTML(Wt.name) + "</span></span><span class=\"text\" style=\"margin-left: 10px; margin-right: 10px; opacity: 0.6;\">" + (zt ? " joined." : "left.") + "</span></div>";
+                    this.add(qt), SWAM.Settings.ui.showLogConnections && (SWAM.SmallLog.add(qt), !zt && 3e4 > new Date().getTime() - Wt.lastMessageTime && UI.addChatMessage(qt, !0))
+                }
+            }, this.logConnected = function () {
+                let Wt = "";
+                switch (game.gameType) {
+                    case SWAM.GAME_TYPE.FFA:
+                        Wt = "Free For All";
+                        break;
+                    case SWAM.GAME_TYPE.CTF:
+                        Wt = "Capture the flag";
+                        break;
+                    case SWAM.GAME_TYPE.BR:
+                        Wt = "Battle Royale";
+                }
+                this.add("<hr/><div style='margin: 20px; font-size: 16px;'>" + new Date().toLocaleString() + "  - Joined to " + Wt + "</div>")
+            }, this.logFlag = function (Wt) {
+                this.add("<div class='message' style='position: relative; display: block;'>" + Wt + "</div>")
+            }, this.logNewMatch = function () {
+                this.add("<hr/><div style='margin: 20px; font-size: 16px;'>" + new Date().toLocaleString() + "  - New CTF Match started</div>")
+            }, this.show = function () {
+                Sound.UIClick(), Ht.show(), jt[0].scrollTop = jt[0].scrollHeight, closeWhenClickOutside(Ht)
+            }, this.hide = function () {
+                Ht.hide()
+            },
+            function () {
+                Ht = $(getTemplate(".modalContainer .modalDialog").replace(/\$title/g, "Game log")).attr("id", "fullLog").css("z-index", "30").hide();
+                let Wt = $(getTemplate("#fullLogTemplate")).removeAttr("id");
+                jt = $(".fullLogcontent", Wt), $(".modalContent", Ht).append(Wt), $(".chkFLKills", Wt).click(() => {
+                    Gt = !Gt, $(".flwkw", Wt).toggle()
+                }), $(".chkFLPlayers", Wt).click(() => {
+                    Yt = !Yt, $(".flplayer", Wt).toggle()
+                }), $("body").append(Ht), SWAM.on("keyup", zt => {
+                    27 == zt.which && SWAM.GameLog.visible() && SWAM.GameLog.hide()
+                })
+            }()
+    }, SWAM.updatePlayersNamePlate = function () {
+        var Bt = Players.getIDs(),
+            Xt = Players.getMe();
+        for (var Gt in Bt) {
+            var Yt = Players.get(Gt);
+            "undefined" != typeof Yt.scorePlace && (Yt.sprites.name.text = Yt.scorePlace + ". " + Yt.name + " [" + Math.floor(100 * parseFloat(Yt.health)) + "]")
+        }
+    };
+    let emotesPanel = new function () {
+        function Gt() {
+            let qt = SWAM.getEmotesList().slice().filter(Kt => "x" != Kt).sort();
+            return [...new Set(qt)]
+        }
+
+        function Ht() {
+            const qt = {
+                tf: [340, 404],
+                pepe: [412, 476],
+                clap: [268, 476],
+                lol: [412, 548],
+                bro: [268, 548],
+                kappa: [340, 476],
+                cry: [340, 548],
+                rage: [412, 404]
+            };
+            let Kt = "";
+            for (let Zt in qt) Kt += `.emote-${Zt} { width: 32px; height: 32px; background: url(${getFilePath("gui.png")}) -${qt[Zt][0]/2}px  -${qt[Zt][1]/2}px; background-size: 512px; background-repeat: no-repeat; } `;
+            return Kt
+        }
+        let Wt = null,
+            zt = null;
+        this.toggle = function () {
+            "none" === Wt.css("display") ? this.show() : this.hide()
+        }, this.show = function () {
+            "none" === Wt.css("display") && (Wt.fadeIn("fast"), zt = closeWhenClickOutside(Wt))
+        };
+        let Vt = this.hide = function () {
+            Wt.fadeOut("fast"), $(document).off("mousedown", "", zt)
+        };
+        (function () {
+            Wt = $(getTemplate(".modalContainer .modalDialog").replace(/\$title/g, "Emotes")).attr("id", "emotesPanel").css({
+                zIndex: "30",
+                left: "0px",
+                maxHeight: "80%",
+                display: "none"
+            }).hide();
+            let qt = "",
+                Kt = 0;
+            Gt().forEach(Qt => {
+                qt += `<div class="emoteSample" data-name="${Qt}"><div class="emote emote-${Qt}"></div><div>/${Qt}</div></div>`, Kt++
+            });
+            let Zt = $(qt);
+            $(".modalContent", Wt).append(Zt), $("body").append(Wt), Wt.on("click", ".emoteSample", Qt => {
+                UI.parseCommand("/" + $(Qt.currentTarget).data("name")), Vt()
+            })
+        })(),
+        function () {
+            let qt = SWAM.getEmotesList();
+            const Kt = getFilePath("emotes.png");
+            let Zt = "";
+            Zt += Ht();
+            for (let Jt = 8; Jt < qt.length; Jt++) {
+                let $t = qt[Jt],
+                    en = Jt - 8;
+                if ("x" != $t) {
+                    let on = 100 * Math.floor(en / 16),
+                        sn = $t.replace(/ /g, "");
+                    Zt += `.emote-${sn} { ` + "width: 32px; height: 32px; " + `background: url(${Kt}) -${100*(en%16)}%  -${on}% ; ` + "background-size: 1600%;} "
                 }
             }
-        }, SWAM.GameLog = new function () {
-            let Gt = !0,
-                Yt = !1,
-                Ht = null,
-                jt = null;
-            this.add = function (Wt) {
-                    if (game.state === Network.STATE.PLAYING) {
-                        let zt = $(Wt);
-                        zt.hasClass("flwkw") && !Gt && zt.hide(), zt.hasClass("flplayer") && !Yt && zt.hide();
-                        let Vt = jt[0],
-                            qt = isScrolledToBottom(Vt);
-                        jt.append(zt), 1e3 < jt.children().length && jt.children().first().remove(), qt && (Vt.scrollTop = Vt.scrollHeight)
-                    }
-                }, this.logKill = function (Wt, zt) {
-                    if (null != Wt && null != zt) {
-                        let qt = "<div class=\"flwkw line\"><span class=\"playersel\" data-playerid=\"" + Wt.id + "\"><span class=\"flag small flag-" + Wt.flag + "\"></span><span class=\"nick\" style=\"color:" + (1 == Wt.team ? "#4d7fd5" : 2 == Wt.team ? "#dc4f46" : "") + ";\">" + UI.escapeHTML(Wt.name) + "</span></span><span class=\"text\" style=\"margin-left: 10px; margin-right: 10px; opacity: 0.6;\"> killed </span><span class=\"playersel\" data-playerid=\"" + zt.id + "\"><span class=\"flag small flag-" + zt.flag + "\"></span><span class=\"nick\" style=\"color:" + (1 == zt.team ? "#4d7fd5" : 2 == zt.team ? "#dc4f46" : "") + ";\">" + UI.escapeHTML(zt.name) + "</span></span></div>";
-                        this.add(qt), SWAM.Settings.ui.showWhoKilledWho && SWAM.SmallLog.add(qt)
-                    }
-                }, this.logPlayerConnection = function (Wt, zt) {
-                    if (null != Wt) {
-                        let qt = "<div class=\"flplayer line\"><span class=\"playersel\" data-playerid=\"" + Wt.id + "\"><span class=\"flag small flag-" + Wt.flag + "\"></span><span class=\"nick\" style=\"color:" + (1 == Wt.team ? "#4d7fd5" : 2 == Wt.team ? "#dc4f46" : "") + ";\">" + UI.escapeHTML(Wt.name) + "</span></span><span class=\"text\" style=\"margin-left: 10px; margin-right: 10px; opacity: 0.6;\">" + (zt ? " joined." : "left.") + "</span></div>";
-                        this.add(qt), SWAM.Settings.ui.showLogConnections && (SWAM.SmallLog.add(qt), !zt && 3e4 > new Date().getTime() - Wt.lastMessageTime && UI.addChatMessage(qt, !0))
-                    }
-                }, this.logConnected = function () {
-                    let Wt = "";
-                    switch (game.gameType) {
-                        case SWAM.GAME_TYPE.FFA:
-                            Wt = "Free For All";
-                            break;
-                        case SWAM.GAME_TYPE.CTF:
-                            Wt = "Capture the flag";
-                            break;
-                        case SWAM.GAME_TYPE.BR:
-                            Wt = "Battle Royale";
-                    }
-                    this.add("<hr/><div style='margin: 20px; font-size: 16px;'>" + new Date().toLocaleString() + "  - Joined to " + Wt + "</div>")
-                }, this.logFlag = function (Wt) {
-                    this.add("<div class='message' style='position: relative; display: block;'>" + Wt + "</div>")
-                }, this.logNewMatch = function () {
-                    this.add("<hr/><div style='margin: 20px; font-size: 16px;'>" + new Date().toLocaleString() + "  - New CTF Match started</div>")
-                }, this.show = function () {
-                    Sound.UIClick(), Ht.show(), closeWhenClickOutside(Ht)
-                }, this.hide = function () {
-                    Ht.hide()
-                },
-                function () {
-                    Ht = $(getTemplate(".modalContainer .modalDialog").replace(/\$title/g, "Game log")).attr("id", "fullLog").css("z-index", "30").hide();
-                    let Wt = $(getTemplate("#fullLogTemplate")).removeAttr("id");
-                    jt = $(".fullLogcontent", Wt), $(".modalContent", Ht).append(Wt), $(".chkFLKills", Wt).click(() => {
-                        Gt = !Gt, $(".flwkw", Wt).toggle()
-                    }), $(".chkFLPlayers", Wt).click(() => {
-                        Yt = !Yt, $(".flplayer", Wt).toggle()
-                    }), $("body").append(Ht)
-                }()
-        }, SWAM.updatePlayersNamePlate = function () {
-            var Bt = Players.getIDs(),
-                Xt = Players.getMe();
-            for (var Gt in Bt) {
-                var Yt = Players.get(Gt);
-                "undefined" != typeof Yt.scorePlace && (Yt.sprites.name.text = Yt.scorePlace + ". " + Yt.name + " [" + Math.floor(100 * parseFloat(Yt.health)) + "]")
+            let Qt = `<style type='text/css'>${Zt}</style>`;
+            $("body").append(Qt)
+        }(), Wt.css("display", "block"), Wt.css("display", "none")
+    };
+    SWAM.emotesPanel = emotesPanel, ! function () {
+        function Bt(Vt, qt, Kt) {
+            var Zt, Qt, Jt;
+            if (0 == qt) Zt = Qt = Jt = Kt;
+            else {
+                var $t = function (nn, an, rn) {
+                        return 0 > rn && (rn += 1), 1 < rn && (rn -= 1), rn < 1 / 6 ? nn + 6 * (an - nn) * rn : rn < 1 / 2 ? an : rn < 2 / 3 ? nn + 6 * ((an - nn) * (2 / 3 - rn)) : nn
+                    },
+                    en = 0.5 > Kt ? Kt * (1 + qt) : Kt + qt - Kt * qt,
+                    tn = 2 * Kt - en;
+                Zt = $t(tn, en, Vt + 1 / 3), Qt = $t(tn, en, Vt), Jt = $t(tn, en, Vt - 1 / 3)
             }
-        },
-        function () {
-            let Xt = SWAM.getEmotesList(),
-                Gt = "";
-            const Yt = getFilePath("emotes.png");
-            for (let jt = 8; jt < Xt.length; jt++) {
-                let Wt = Xt[jt],
-                    zt = jt - 8,
-                    qt = 64 * Math.floor(zt / 16) / 2,
-                    Kt = Wt.replace(/ /g, "");
-                Gt += `.emote-${Kt} { ` + "width: 32px; height: 32px; " + `background: url(${Yt}) -${64*(zt%16)/2}px  -${qt}px ; ` + "background-size: 50%;  background-repeat: no-repeat; } "
+            return [Math.round(255 * Zt), Math.round(255 * Qt), Math.round(255 * Jt)]
+        }
+        const Xt = {
+                x: -9050,
+                y: -1450
+            },
+            Gt = {
+                x: 8074,
+                y: -905
+            };
+        let Yt = [],
+            Ht = null,
+            jt = new PIXI.ticker.Ticker;
+        jt.stop(), jt.add(function () {
+            if (!window.adding) {
+                for (var Vt = [], qt = 0; qt < Yt.length; qt++) Yt[qt].update(), Yt[qt].exists() ? Vt.push(Yt[qt]) : Yt[qt].destroy();
+                Yt = Vt
             }
-            let Ht = `<style type='text/css'>${Gt}</style>`;
-            $("body").append(Ht)
-        }();
+        }), jt.start();
+        class Wt {
+            constructor(Vt, qt) {
+                this.pos = {
+                    x: Vt ? Vt.x : 0,
+                    y: Vt ? Vt.y : 0
+                }, this.vel = {
+                    x: 0,
+                    y: 0
+                }, this.shrink = .97, this.size = 2, this.resistance = 1, this.gravity = 0, this.flick = !1, this.alpha = 1, this.fade = 0, this.color = qt || 0, this.createSprite()
+            }
+            createSprite() {
+                this.sprite = new PIXI.Sprite(Wt.texture), this.sprite.width = this.sprite.height = 10;
+                let Vt = Bt(this.color / 360, 1, 0.5);
+                this.sprite.tint = (Vt[0] << 16) + (Vt[1] << 8) + Vt[2], Ht.addChild(this.sprite)
+            }
+            destroy() {
+                Ht.removeChild(this.sprite), this.sprite.destroy()
+            }
+            update() {
+                this.vel.x *= this.resistance, this.vel.y *= this.resistance, this.vel.y += this.gravity, this.pos.x += this.vel.x / game.scale, this.pos.y += this.vel.y / game.scale, this.size *= this.shrink, this.alpha -= this.fade, this.sprite.position.set(this.pos.x, this.pos.y);
+                let Vt = this.flick ? Math.random() * this.size : this.size;
+                this.sprite.scale.set(Vt / 10 / game.scale)
+            }
+            exists() {
+                return 0.1 <= this.alpha && 1 <= this.size
+            }
+        }
+        Wt.texture = PIXI.Texture.fromImage(getFilePath("sparkbwsmall.png")), window.createExplosion = function (Vt, qt) {
+            var Kt = 10 * Math.random() + 100;
+            qt = qt || 10 * Math.floor(360 * Math.random() / 10);
+            for (var Zt = 0; Zt < Kt; Zt++) {
+                var Qt = new Wt(Vt, qt),
+                    Jt = 2 * (Math.random() * Math.PI),
+                    $t = Math.cos(Math.random() * Math.PI / 2) * Tools.randInt(4, 12);
+                Qt.vel.x = Math.cos(Jt) * $t, Qt.vel.y = Math.sin(Jt) * $t, Qt.size = 12, Qt.resistance = 0.92, Qt.shrink = 0.05 * Math.random() + 0.93, Qt.flick = !0, Yt.push(Qt)
+            }
+        };
+        let zt = 0;
+        SWAM.fx = {}, SWAM.fx.stopFireworks = () => {
+            SWAM.debug && console.log("Fireworks stopped"), zt = 0
+        }, SWAM.fx.startFireworks = Vt => {
+            function qt() {
+                let Qt, Jt, $t;
+                return Vt ? (Qt = 1 == Vt ? Xt : Gt, Jt = 700, $t = 500) : (Qt = Graphics.getCamera(), Jt = game.halfScreenX / game.scale, $t = game.halfScreenY / game.scale), new Vector(Tools.rand(Qt.x - Jt, Qt.x + Jt), Tools.rand(Qt.y - $t, Qt.y + $t))
+            }
+
+            function Kt() {
+                let Qt = qt();
+                createExplosion(Qt);
+                let Jt = new Date().getTime();
+                59000 > Jt - zt && setTimeout(Kt, Tools.randInt(400, 1e3))
+            }
+            zt = new Date().getTime(), SWAM.debug && console.log("Fireworks satarted");
+            let Zt = Tools.randInt(1, 4);
+            for (let Qt = 0; Qt < Zt; Qt++) Kt()
+        }, SWAM.on("CTF_MatchStarted", SWAM.fx.stopFireworks), SWAM.on("gameWipe", SWAM.fx.stopFireworks), SWAM.on("CTF_MatchEnded", Vt => {
+            SWAM.Settings.general.matchEndFX && SWAM.fx.startFireworks(Vt.w)
+        }), SWAM.one("gameRunning", () => {
+            Ht = new PIXI.Container, game.graphics.layers.objects.addChild(Ht)
+        })
+    }(), SWAM.mapColorizer = new function () {
+        function Bt($t) {
+            for (let en in $t) Qt[en] = ($t[en] - 1) / Zt
+        }
+
+        function Xt($t, en) {
+            Gt(), Jt = new Date, qt = !0, Vt = 0, zt = 50, jt.scale.set(0), jt.alpha = 0.4, jt.tint = en, jt.position.set($t.x, $t.y), Wt.addChild(jt), Kt.start(), game.graphics.layers.map.filters = [new PIXI.filters.AdjustmentFilter]
+        }
+
+        function Gt() {
+            Kt.stop()
+        }
+
+        function Yt() {
+            if (SWAM.debug) {
+                let $t = new Date().getTime() - Jt.getTime();
+                console.log("Steps: " + Vt + "   Time: " + $t / 1e3 + "ms.")
+            }
+        }
+        let jt = new PIXI.Graphics,
+            Wt = game.graphics.layers.groundobjects,
+            zt = 0,
+            Vt = 0,
+            qt = !1;
+        this.circle = jt, jt.beginFill(16777215, 1), jt.drawCircle(0, 0, 50), jt.endFill(), jt.blendMode = PIXI.BLEND_MODES.ADD, jt.alpha = 0.3;
+        let Kt = new PIXI.ticker.Ticker;
+        Kt.autoStart = !1, Kt.add(function () {
+            if (qt) {
+                if (jt.width > 1.8 * config.mapWidth) return Yt(), qt = !1, void Graphics.renderBackground();
+                for (let en in Qt) game.graphics.layers.map.filters[0][en] += Qt[en];
+                0.2 < jt.alpha && (jt.alpha -= 3e-3), jt.height = jt.width += zt, zt += 5
+            } else if (Vt < 4 * Zt)
+                for (let en in Qt) game.graphics.layers.map.filters[0][en] -= Qt[en] / 4;
+            else Gt(), Yt();
+            Vt++, Graphics.renderBackground()
+        }), Kt.stop();
+        const Zt = 145;
+        let Qt = {},
+            Jt = new Date;
+        this.showBlue = function () {
+            Bt({
+                gamma: 1.2,
+                saturation: 0.8,
+                contrast: 1,
+                brightness: 1.3,
+                red: 0.1,
+                green: 0.3,
+                blue: 0.7,
+                alpha: 1.5
+            }), Xt(SWAM.ArrowIndicator.BLUE.tracker.flag.BASE_COORDINATES, 3355647)
+        }, this.showRed = function () {
+            Bt({
+                gamma: 1.7,
+                brightness: 1.3,
+                contrast: 1.2,
+                saturation: .2,
+                red: 0.7,
+                green: 0.3,
+                blue: 0.3,
+                alpha: 1.2
+            }), Xt(SWAM.ArrowIndicator.RED.tracker.flag.BASE_COORDINATES, 16724787)
+        }, this.remove = function () {
+            Gt(), jt.scale.set(0), Wt.removeChild(jt), game.graphics.layers.map.filters = []
+        }, SWAM.on("CTF_MatchEnded", $t => {
+            1 == $t.w ? SWAM.mapColorizer.showBlue() : SWAM.mapColorizer.showRed()
+        }), SWAM.on("CTF_MatchStarted", this.remove), SWAM.on("gameWipe", this.remove)
+    };
     let sentMessages = [],
         sentMessageIndex = 0;
     $("#chatinput").keydown(function (Bt) {
@@ -25027,6 +25232,9 @@ function SWAM() {
                         break;
                     case 115:
                         SWAM.toggleUI();
+                        break;
+                    case 116:
+                        emotesPanel.toggle();
                         break;
                     case 120:
                         SWAM.GameLog.show();
@@ -25073,15 +25281,14 @@ SWAM.injectTextures = function (Bt, Xt, Gt, Yt, Ht) {
         ui_minimap_2: ["items", [540, 140, 64, 64]],
         ui_minimap_3: ["items", [268, 140, 64, 64]]
     };
-    const Wt = ["tf", "pepe", "clap", "lol", "bro", "kappa", "cry", "rage", "watchingyou", "cool", "party", "facepalm", "poo", "bones", "insult", "jolly", "turtle", "turtled", "heli", "pred", "goli", "prow", "nado", "uplove", "rambo", "joker", "vader", "yoda", "bomb", "heart", "victory", "wflag", "chicken", "peace", "party1", "party2", "steamr", "ndt", "praptor", "shrug", "mime", "doh", "derp", "salute", "lotfl", "yell", "dab", "fingergun", "hawkes", "loser", "fguns", "sweeteyes", "noob1", "noob2", "rekt", "thief", "alert", "shield", "inferno", "putin", "trump", "kim", "beer", "narf", "bang", "ass", "ddd", "revenge", "monkey", "godfather", "noprow", "noheli", "rip", "boom", "canttouch", "redcap", "bluecap", "bluefire", "redfire", "fire"];
-    SWAM.getEmotesList = () => Wt;
+    const Wt = ["tf", "pepe", "clap", "lol", "bro", "kappa", "cry", "rage", "watchingyou", "cool", "party", "facepalm", "hehe", "wink", "joke", "sweeteyes", "insult", "angry", "fury", "yell", "lol", "cry", "sad", "zzz", "mime", "salute", "lotfl", "loser", "fgun", "fguns", "dab", "doh", "derp", "nerd", "flushed", "rolleyes", "drunk", "tblue", "tred", "thief", "greedy", "blah", "stopit", "tired", "drool", "devil", "devilfury", "king1", "king2", "king3", "old", "leader", "dog", "doglol", "dogrr", "dogoh", "clap", "victory", "fu", "tup", "tdown", "h5", "hs", "wave", "ass", "x", "x", "x", "x", "x", "x", "x", "redcap", "bluecap", "bluefire", "redfire", "fire", "alert", "shield", "inferno", "turtle", "turtled", "heli", "pred", "goli", "prow", "nado", "uplove", "poo", "poosad", "pooangry", "poobull", "bones", "jolly", "wflag", "bomb", "heart", "bear", "bird", "chicken", "peace", "party1", "party2", "beer", "rambo", "joker", "vader", "yoda", "godfather", "hawkes", "monkey", "narf", "steamr", "noob1", "noob2", "dragon", "bot", "nobot", "noprow", "noheli", "putin", "trump", "kim", "rip", "boom", "canttouch", "bang", "ddd", "revenge", "rekt", "skullpilot", "hellpilot", "acepilot", "pigpilot", "ndt", "raptor", "gg", "ggwp", "bs", "nyan", "elon", "think", "missibis", "pluto", "shrug", "ace", "salty", "mvp", "stop", "camp", "bananas", "mine"];
     let zt = {};
     for (let Kt = 8; Kt < Wt.length; Kt++) {
         let Zt = Wt[Kt],
             Qt = Kt - 8;
-        zt["emote_" + Zt] = ["emotes", [64 * (Qt % 16), 64 * Math.floor(Qt / 16), 64, 64]]
+        "x" == Zt || (zt["emote_" + Zt] = ["emotes", [64 * (Qt % 16), 64 * Math.floor(Qt / 16), 64, 64]])
     }
-    for (let Kt in $.extend(jt, zt), jt) Xt[Kt] = jt[Kt];
+    for (let Kt in SWAM.getEmotesList = () => Wt, $.extend(jt, zt), jt) Xt[Kt] = jt[Kt];
     var qt = {
         minimap1: {
             texture: "ui_minimap_1",
@@ -25120,7 +25327,12 @@ SWAM.injectTextures = function (Bt, Xt, Gt, Yt, Ht) {
     function Bt(un) {
         const pn = function () {
             let hn = Array.from(arguments);
-            return hn.shift(), un.apply(null, hn)
+            hn.shift();
+            try {
+                return un.apply(null, hn)
+            } catch (fn) {
+                console.error(fn)
+            }
         };
         return pn.guid = un.guid = un.guid || $.guid++, pn
     }
@@ -25917,8 +26129,7 @@ SWAM.injectTextures = function (Bt, Xt, Gt, Yt, Ht) {
                     if (SWAM.Audio.Flag[Ht] == Xt) {
                         Yt = Ht + "_" + Gt;
                         break
-                    }
-                null != Yt && SWAM.Audio.play(Yt)
+                    } null != Yt && SWAM.Audio.play(Yt)
             }
         }, SWAM.Audio.play = function (Xt) {
             if (config.settings.sound) {
@@ -25932,7 +26143,7 @@ SWAM.injectTextures = function (Bt, Xt, Gt, Yt, Ht) {
 };
 
 function getFilePath(Bt) {
-    return "https://whohowwhatwhenwhere.github.io/StarWarsMod4AirMash/assets/" + Bt + "?" + SWAM_version
+    return "https://molesmalo.github.io/StarWarsMod4AirMash/assets/" + Bt + "?" + SWAM_version
 }
 $(function () {
     (function () {
